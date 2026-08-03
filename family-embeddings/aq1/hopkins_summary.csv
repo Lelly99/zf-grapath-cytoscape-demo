@@ -1,0 +1,3 @@
+mean,standard_deviation,ci_low,ci_high,confidence,repeats,sample_size,orientation,bird_id,metric,n_samples
+0.0001918651620391762,4.432589288661342e-05,0.00011350922113362193,0.0002775261526526705,0.95,100,,0=more_clusterable; 0.5=spatial_randomness,Aq1,euclidean,827
+0.0002001021668901192,4.9321092442842915e-05,0.00011953761787714629,0.00032782900960515594,0.95,100,,0=more_clusterable; 0.5=spatial_randomness,Aq1,cosine,827
