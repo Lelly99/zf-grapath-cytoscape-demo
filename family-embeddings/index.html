@@ -18,13 +18,302 @@ p{max-width:78ch}code{font-size:.88em;background:#eef2f4;padding:.12rem .28rem;b
 .mobile-nav{display:none}footer{text-align:center;color:var(--muted);padding:0 1rem 3rem}
 @media(max-width:850px){.layout{display:block}aside{display:none}.family-grid{grid-template-columns:1fr}.mobile-nav{display:block;margin-top:1rem}main{border-radius:12px}}
 @media print{aside,.actions,.mobile-nav{display:none}body{background:white;font-size:11pt}.hero{padding:1rem;color:black;background:white}.lead,.eyebrow{color:black}.layout{display:block;padding:0}main{border:0;box-shadow:none;padding:0}}
+.explorer-controls{display:flex;gap:1rem;flex-wrap:wrap}select{font:inherit;padding:.5rem;border:1px solid #b4c7ce;border-radius:8px;max-width:100%}#full-plot{width:100%;height:650px;min-height:450px}details{margin:1.2rem 0}summary{cursor:pointer;font-weight:700}.history{border-top:3px solid #087f79;padding-top:1rem}@media(max-width:650px){#full-plot{height:530px}}
 </style></head><body>
-<header class="hero"><div class="hero-inner"><div class="eyebrow">Zebra finch vocal development</div><h1>Family spectrotemporal clustering and visualization report</h1>
-<p class="lead">A self-contained account of duration selection, onset-aligned padded spectrograms, metric-aware embeddings, HDBSCAN clusters, Hopkins clusterability, and interpretation limits.</p>
-<div class="actions"><a class="button" href="#interactive-visualizations">Explore visualizations</a><a class="button alt" href="hopkins-entropy/">Hopkins &amp; entropy extension</a><a class="button alt" href="qr/family_embeddings_all.png">Download QR code</a></div>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">Zebra finch vocal development</div><h1>Family acoustic diversity</h1>
+<p class="lead">Explore the full Aq12–DG1 cohort: GPU clustering, eight interactive projections, per-bird entropy and descriptive Hopkins, with the earlier analyses preserved below.</p>
+<div class="actions"><a class="button" href="#full-explorer">Explore full cohort</a><a class="button alt" href="hopkins-entropy/">Hopkins &amp; entropy extension</a><a class="button alt" href="qr/family_embeddings_all.png">Download QR code</a></div>
 <div class="mobile-nav"><a class="button" href="#1-objective">Read the report ↓</a></div></div></header>
 <div class="layout"><main>
-<section id="gpu-results"><h2>Full-data GPU clustering · October 2026</h2><p><a href="gpu-clustering-20261006/">31,061-observation Aq12–DG1 cuML results: counts, entropy, noise and density sensitivities</a>. A separate descriptive analysis; CPU equivalence and biological validation are not claimed.</p></section><section id="gpu-visualizations"><h2>Full-cohort embeddings &amp; Hopkins · October 2026</h2><p><a href="gpu-visualizations-20261006/">Eight interactive projections, descriptive Hopkins tables and reference spectrogram examples</a>. Shared31,061-observation Aq12–DG1 spaces, colored by existing original-space GPU labels.</p></section><section id="interactive-visualizations"><h2>Interactive visualizations</h2><p>Choose an analysis space. Each page contains eight interactive embeddings, HDBSCAN cluster views, representative spectrogram callouts, and Hopkins results.</p>
+<section id="full-results"><h2>Full-data results · October 2026</h2><p><strong>31,061 observations · Aq12 and DG1 · four density settings</strong>. Whole-syllable spectrogram structure, including duration, remains the reference. The23 reviewed exclusions and Aq32 hold are preserved.</p><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th style="text-align: right;">Clusters</th>
+<th style="text-align: right;">Noise n (%)</th>
+<th style="text-align: right;">Entropy including noise</th>
+<th style="text-align: right;">Assigned entropy</th>
+<th style="text-align: right;">Fit seconds</th>
+<th style="text-align: right;">Sampled host/GPU peak GiB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mcs64_ms20</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">504 (1.62%)</td>
+<td style="text-align: right;">2.737</td>
+<td style="text-align: right;">2.661</td>
+<td style="text-align: right;">20.25</td>
+<td style="text-align: right;">2.90 / 1.19</td>
+</tr>
+<tr>
+<td>mcs32_ms20</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">480 (1.55%)</td>
+<td style="text-align: right;">2.749</td>
+<td style="text-align: right;">2.676</td>
+<td style="text-align: right;">16.82</td>
+<td style="text-align: right;">2.82 / 1.19</td>
+</tr>
+<tr>
+<td>mcs128_ms20</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">469 (1.51%)</td>
+<td style="text-align: right;">2.681</td>
+<td style="text-align: right;">2.608</td>
+<td style="text-align: right;">17.03</td>
+<td style="text-align: right;">2.82 / 1.19</td>
+</tr>
+<tr>
+<td>mcs64_ms40</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">7919 (25.49%)</td>
+<td style="text-align: right;">4.527</td>
+<td style="text-align: right;">4.977</td>
+<td style="text-align: right;">22.23</td>
+<td style="text-align: right;">2.95 / 1.20</td>
+</tr>
+</tbody>
+</table><p>The three min_samples20 settings largely agree. The min_samples40 sensitivity changes the partition substantially; no setting is selected for a favorable entropy direction. These are cuML descriptive results without CPU-equivalence or biological-validation claims.</p><details><summary>Clustering agreement, per-bird entropy and duration/support diagnostics</summary><table>
+<thead>
+<tr>
+<th>Pair</th>
+<th style="text-align: right;">ARI including noise</th>
+<th style="text-align: right;">ARI common assigned</th>
+<th style="text-align: right;">Common assigned n</th>
+<th style="text-align: right;">Noise-transition fraction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mcs64_ms20__mcs32_ms20</td>
+<td style="text-align: right;">0.9998</td>
+<td style="text-align: right;">0.9999</td>
+<td style="text-align: right;">30547</td>
+<td style="text-align: right;">0.0014</td>
+</tr>
+<tr>
+<td>mcs64_ms20__mcs128_ms20</td>
+<td style="text-align: right;">0.9984</td>
+<td style="text-align: right;">0.9986</td>
+<td style="text-align: right;">30557</td>
+<td style="text-align: right;">0.0011</td>
+</tr>
+<tr>
+<td>mcs64_ms20__mcs64_ms40</td>
+<td style="text-align: right;">0.2344</td>
+<td style="text-align: right;">0.1978</td>
+<td style="text-align: right;">23065</td>
+<td style="text-align: right;">0.2437</td>
+</tr>
+<tr>
+<td>mcs32_ms20__mcs128_ms20</td>
+<td style="text-align: right;">0.9981</td>
+<td style="text-align: right;">0.9984</td>
+<td style="text-align: right;">30547</td>
+<td style="text-align: right;">0.0025</td>
+</tr>
+<tr>
+<td>mcs32_ms20__mcs64_ms40</td>
+<td style="text-align: right;">0.2341</td>
+<td style="text-align: right;">0.1972</td>
+<td style="text-align: right;">23056</td>
+<td style="text-align: right;">0.2450</td>
+</tr>
+<tr>
+<td>mcs128_ms20__mcs64_ms40</td>
+<td style="text-align: right;">0.2374</td>
+<td style="text-align: right;">0.2062</td>
+<td style="text-align: right;">23097</td>
+<td style="text-align: right;">0.2427</td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th>Bird</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">Noise n</th>
+<th style="text-align: right;">Assigned categories</th>
+<th style="text-align: right;">H including noise</th>
+<th style="text-align: right;">Assigned H</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aq_12</td>
+<td style="text-align: right;">630</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.336</td>
+<td style="text-align: right;">1.039</td>
+</tr>
+<tr>
+<td>Aq_26_HP</td>
+<td style="text-align: right;">2211</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1.684</td>
+<td style="text-align: right;">1.579</td>
+</tr>
+<tr>
+<td>Aq_30_HP</td>
+<td style="text-align: right;">1318</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1.460</td>
+<td style="text-align: right;">1.357</td>
+</tr>
+<tr>
+<td>Aq_31_HP</td>
+<td style="text-align: right;">1973</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.291</td>
+<td style="text-align: right;">1.261</td>
+</tr>
+<tr>
+<td>Aq_33_HP</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1.913</td>
+<td style="text-align: right;">1.847</td>
+</tr>
+<tr>
+<td>Aq_51_HP</td>
+<td style="text-align: right;">4121</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1.613</td>
+<td style="text-align: right;">1.555</td>
+</tr>
+<tr>
+<td>DG_1</td>
+<td style="text-align: right;">780</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.374</td>
+<td style="text-align: right;">1.312</td>
+</tr>
+<tr>
+<td>Lime_21_Y_106</td>
+<td style="text-align: right;">3196</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1.972</td>
+<td style="text-align: right;">1.921</td>
+</tr>
+<tr>
+<td>Lime_22_Y_107</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.901</td>
+<td style="text-align: right;">-0.000</td>
+</tr>
+<tr>
+<td>Lime_23_Y_108</td>
+<td style="text-align: right;">447</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.992</td>
+<td style="text-align: right;">0.403</td>
+</tr>
+<tr>
+<td>Lime_24_Y_109</td>
+<td style="text-align: right;">972</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.234</td>
+<td style="text-align: right;">0.063</td>
+</tr>
+<tr>
+<td>Lime_29</td>
+<td style="text-align: right;">1090</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.831</td>
+<td style="text-align: right;">1.572</td>
+</tr>
+<tr>
+<td>Lime_30</td>
+<td style="text-align: right;">1268</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.671</td>
+<td style="text-align: right;">1.470</td>
+</tr>
+<tr>
+<td>Lime_31_Y_641_06</td>
+<td style="text-align: right;">1047</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1.964</td>
+<td style="text-align: right;">1.891</td>
+</tr>
+<tr>
+<td>Lime_72_Y</td>
+<td style="text-align: right;">5007</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.910</td>
+<td style="text-align: right;">0.900</td>
+</tr>
+<tr>
+<td>Lime_74_Y</td>
+<td style="text-align: right;">4878</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.884</td>
+<td style="text-align: right;">2.868</td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th style="text-align: right;">Duration eta²</th>
+<th style="text-align: right;">Support eta²</th>
+<th style="text-align: right;">Noise below5ms</th>
+<th style="text-align: right;">Noise above Aq12 cutoff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mcs64_ms20</td>
+<td style="text-align: right;">0.923</td>
+<td style="text-align: right;">0.923</td>
+<td style="text-align: right;">0.30%</td>
+<td style="text-align: right;">3.82%</td>
+</tr>
+<tr>
+<td>mcs32_ms20</td>
+<td style="text-align: right;">0.921</td>
+<td style="text-align: right;">0.922</td>
+<td style="text-align: right;">0.30%</td>
+<td style="text-align: right;">3.82%</td>
+</tr>
+<tr>
+<td>mcs128_ms20</td>
+<td style="text-align: right;">0.924</td>
+<td style="text-align: right;">0.924</td>
+<td style="text-align: right;">0.30%</td>
+<td style="text-align: right;">2.68%</td>
+</tr>
+<tr>
+<td>mcs64_ms40</td>
+<td style="text-align: right;">0.911</td>
+<td style="text-align: right;">0.911</td>
+<td style="text-align: right;">0.30%</td>
+<td style="text-align: right;">7.83%</td>
+</tr>
+</tbody>
+</table><p>Entropies are bits. Noise is one category in the first treatment; assigned-only entropy uses a smaller denominator. Counts are unequal, Lime22 is sparsely represented, duration selection differs between families, and333 unreviewed sub5ms intervals remain. No general family inference or significance test follows.</p></details><p><a href="gpu-clustering-20261006/bird_metrics.csv">Download counts, noise and entropy</a> · <a href="gpu-clustering-20261006/occupancy.csv">Download occupancy</a></p></section>
+<section id="full-explorer"><h2>Explore the full cohort</h2><p>Choose a projection and coloring below. All31,061 observations remain in each view. Category colors are the unchanged original-space cuML64/20 labels; clustering was not refitted in the2D coordinates.</p><div class="explorer-controls"><label>Projection <select id="full-variant"><option value="pca_euclidean">PCA · EUCLIDEAN</option><option value="pcoa_cosine">PCOA · COSINE</option><option value="umap_euclidean">UMAP · EUCLIDEAN</option><option value="umap_cosine">UMAP · COSINE</option><option value="tsne_euclidean">TSNE · EUCLIDEAN</option><option value="tsne_cosine">TSNE · COSINE</option><option value="phate_euclidean">PHATE · EUCLIDEAN</option><option value="phate_cosine">PHATE · COSINE</option></select></label><label>Color <select id="full-color"><option value="category">Reference category</option><option value="bird">Bird</option></select></label></div><p id="full-status" role="status" aria-live="polite">Loading PCA…</p><div id="full-plot" aria-label="Interactive full-cohort projection"></div><details><summary>Projection methods and interpretation</summary><p>Shared Aq12–DG1 spaces, distinct from the earlier family-specific embeddings. PCA,UMAP and t-SNE use GPU cuML; cosine PCoA uses1,000-landmark CPU classical scaling/Gower interpolation; PHATE uses its existing CPU defaults including internal100-component PCA and2,000landmarks. Seed20261006. Nonlinear axes have no explained-variance meaning. Backend equivalence to August implementations is unclaimed.</p></details></section>
+<section id="full-hopkins"><h2>Hopkins for the selected projection</h2><p>Euclidean Hopkins in the displayed2D space, using each group’s convex-hull null,100 deterministic repeats and squared distances. Lower values describe greater concentration relative to this null;0.5 is the randomness reference. Repeat quantiles describe Monte Carlo variation, not biological confidence intervals. Nonlinear embeddings can create concentration: this does not test original-space acoustic clusterability. Groups restrict a shared embedding; these are not pair-conditioned refits.</p><div class="table-wrap"><table><thead><tr><th>Group</th><th>Observations</th><th>Sample per repeat</th><th>Mean H</th><th>Repeat SD</th><th>Repeat 2.5–97.5%</th></tr></thead><tbody id="full-hopkins-rows"></tbody></table></div><p><a href="gpu-visualizations-20261006/hopkins_summary.csv">Download all Hopkins summaries</a></p></section>
+<section id="full-examples"><h2>Reference spectrogram examples</h2><p>Maximum-membership examples from the16largest reference categories, selected deterministically with canonical-ID tie breaking. Membership strength is distinct from cluster persistence. Short intervals remain unclassified unless manually reviewed.</p><img style="max-width:100%;height:auto" loading="lazy" src="gpu-visualizations-20261006/reference_spectrograms.png" alt="Sixteen original-space representative syllable spectrograms"><p><a href="gpu-visualizations-20261006/representative_provenance.csv">Download representative identities and provenance</a></p></section><details id="historical-analysis" class="history"><summary>Earlier analyses · August 2026</summary><section id="interactive-visualizations"><h2>Interactive visualizations</h2><p>Choose an analysis space. Each page contains eight interactive embeddings, HDBSCAN cluster views, representative spectrogram callouts, and Hopkins results.</p>
 <div class="family-grid"><a class="family-card" href="aq12_family/"><strong>Aq12 family</strong><span>Tutor and seven pupils</span></a><a class="family-card" href="dg1_family/"><strong>DG1 family</strong><span>Tutor and eight pupils</span></a><a class="family-card" href="aq1/"><strong>Aq1</strong><span>Individual-bird sensitivity analysis</span></a><a class="family-card" href="hopkins-entropy/"><strong>Hopkins &amp; entropy</strong><span>Cross-family clusterability, HDBSCAN entropy, methods, and interpretation</span></a></div></section>
 <h2 id="1-objective">1. Objective</h2>
 <p>The analysis was redesigned to retain syllable time structure. Instead of
@@ -505,9 +794,18 @@ silence padding, not missing image data.</p>
    tables and should be considered when comparing cluster occupancy.</li>
 <li>Padded silence is part of the representation. Duration-related structure may
    therefore contribute to clustering alongside internal spectrotemporal shape.</li>
-</ol></main><aside>
-<div class="sidebox"><h2>Contents</h2><a href="#interactive-visualizations">Interactive visualizations</a><a href="#1-objective">1. Objective</a><a href="#2-analysis-spaces">2. Analysis spaces</a><a href="#3-duration-diagnostics-and-exclusions">3. Duration diagnostics</a><a href="#4-padded-spectrotemporal-representation">4. Representation</a><a href="#5-embeddings">5. Embeddings</a><a href="#6-hdbscan-clustering">6. HDBSCAN</a><a href="#7-hopkins-clusterability">7. Hopkins</a><a href="#8-visualizations">8. Visualizations</a><a href="#11-interpretation-cautions">11. Interpretation cautions</a></div>
+</ol></details></main><aside>
+<div class="sidebox"><h2>Contents</h2><a href="#full-results">Full-data results</a><a href="#full-explorer">Interactive explorer</a><a href="#full-hopkins">Hopkins summaries</a><a href="#full-examples">Spectrogram examples</a><a href="#historical-analysis">Earlier analyses</a><a href="#interactive-visualizations">Interactive visualizations</a><a href="#1-objective">1. Objective</a><a href="#2-analysis-spaces">2. Analysis spaces</a><a href="#3-duration-diagnostics-and-exclusions">3. Duration diagnostics</a><a href="#4-padded-spectrotemporal-representation">4. Representation</a><a href="#5-embeddings">5. Embeddings</a><a href="#6-hdbscan-clustering">6. HDBSCAN</a><a href="#7-hopkins-clusterability">7. Hopkins</a><a href="#8-visualizations">8. Visualizations</a><a href="#11-interpretation-cautions">11. Interpretation cautions</a></div>
 <div class="sidebox"><h2>Share this report</h2><a href="qr/family_embeddings_all.png"><img class="qr" src="qr/family_embeddings_all.png" alt="QR code linking to this report"></a></div>
 </aside></div><footer>Family spectrotemporal clustering and visualization report · 2026</footer>
 <script>document.querySelectorAll('table').forEach(t=>{const w=document.createElement('div');w.className='table-wrap';t.parentNode.insertBefore(w,t);w.appendChild(t)})</script>
-</body></html>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script><script>const variantSelect=document.getElementById('full-variant'), colorSelect=document.getElementById('full-color'),statusText=document.getElementById('full-status');
+const dataRoot='gpu-visualizations-20261006/inline-data/';let currentPoints=null,requestId=0;const cached=new Map();
+const hopkinsPromise=fetch(dataRoot+'hopkins.json').then(r=>{if(!r.ok)throw Error('Hopkins data unavailable');return r.json()});
+function draw(points){const mode=colorSelect.value;const groups=new Map();for(const p of points){const key=String(mode==='bird'?p[4]:p[2]);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p)}
+const traces=Array.from(groups,([name,p])=>({name:mode==='category'&&name==='-1'?'noise':mode==='category'?'category '+name:name,mode:'markers',type:'scattergl',x:p.map(x=>x[0]),y:p.map(x=>x[1]),customdata:p.map(x=>x.slice(2)),hovertemplate:'category: %{customdata[0]}<br>syllable: %{customdata[1]}<br>bird: %{customdata[2]}<br>role: %{customdata[3]}<br>date: %{customdata[4]}<br>duration: %{customdata[5]} s<extra>%{fullData.name}</extra>',marker:{size:4,opacity:.65}}));
+Plotly.react('full-plot',traces,{margin:{l:45,r:10,t:25,b:45},xaxis:{title:'axis 1'},yaxis:{title:'axis 2'},legend:{orientation:'h'},uirevision:variantSelect.value},{responsive:true,displaylogo:false});}
+async function refresh(){const id=++requestId;const variant=variantSelect.value;statusText.textContent='Loading '+variant.replaceAll('_',' · ')+'…';try{let points=cached.get(variant);if(!points){const r=await fetch(dataRoot+variant+'.json');if(!r.ok)throw Error('Projection data unavailable');points=await r.json();if(points.length!==31061)throw Error('Unexpected observation count');cached.clear();cached.set(variant,points)}if(id!==requestId)return;currentPoints=points;draw(points);const rows=(await hopkinsPromise).filter(x=>x.variant===variant);if(id!==requestId)return;const body=document.getElementById('full-hopkins-rows');body.replaceChildren();for(const h of rows){const row=document.createElement('tr');for(const value of [h.scope,h.n,h.sample_size,(+h.mean).toFixed(4),(+h.sd).toFixed(4),(+h.repeat_q025).toFixed(4)+'–'+(+h.repeat_q975).toFixed(4)]){const cell=document.createElement('td');cell.textContent=value;row.appendChild(cell)}body.appendChild(row)}statusText.textContent='31,061 observations · '+variant.replaceAll('_',' · ')+' · drag to pan, scroll to zoom, hover for provenance';}catch(e){statusText.textContent='Could not load this view: '+e.message;}}
+variantSelect.addEventListener('change',refresh);colorSelect.addEventListener('change',()=>{if(currentPoints)draw(currentPoints)});refresh();
+document.querySelectorAll('aside a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.querySelector(a.getAttribute('href'));if(target&&target.closest('#historical-analysis'))document.getElementById('historical-analysis').open=true}));
+</script></body></html>
