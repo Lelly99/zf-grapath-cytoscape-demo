@@ -1,0 +1,29 @@
+{
+  "backend": "cuML 26.06.00",
+  "parameters": {
+    "verbose": false,
+    "output_type": "numpy",
+    "copy": true,
+    "iterated_power": 15,
+    "n_components": 2,
+    "svd_solver": "full",
+    "tol": 1e-07,
+    "whiten": false
+  },
+  "float_precision": "float32",
+  "cpu_equivalence_claimed": false,
+  "explained_variance_ratio": [
+    0.522926926612854,
+    0.16584543883800507
+  ],
+  "variant": "pca_euclidean",
+  "n": 31061,
+  "seed": 20261006,
+  "elapsed_seconds": 9.085298787802458,
+  "peak_self_rss_bytes": 3947421696,
+  "vector_sha256": "df17d56e4d356894cca4800894f9e3ab6cdf70a4db0c662d662fd3a698c84092",
+  "selection_sha256": "26f77effb1357bc46d41d530a118274c9bd749fb426605677a047b3637cfc736",
+  "clustering_refit": false,
+  "method": "pca",
+  "metric": "euclidean"
+}
