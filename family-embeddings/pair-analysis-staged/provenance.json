@@ -1,0 +1,54 @@
+{
+  "stage_only": true,
+  "published": false,
+  "cohort_version": "published_pair_technical_intervals_v1",
+  "landing_sha256": "91c6e49665f0393b8905a987c39d074ed387e33e276b89793f384459ce2ca048",
+  "metadata_enrichment_sources": [
+    {
+      "pair_id": "paper_pair_3_154",
+      "arm": "pca75",
+      "task_id": "fbd37958160fe87d0a5ad786c9e13e6e36dbbf26514debae6a620e00e87ef35e",
+      "pca_metadata_sha256": "cccc730d2cc818358f753d279261b67e351ad040fc79ec19c0d6ad364c9080a3",
+      "completion_sha256": "af9444437625c21e8d6a21cbc501d133213259c41f72f5977c15f5f30438cd1d"
+    },
+    {
+      "pair_id": "paper_pair_182_149",
+      "arm": "pca75",
+      "task_id": "f9712f6d6c25ffab083999003797a465ef7635f205bde44a6394e58e9aa53a0a",
+      "pca_metadata_sha256": "6cc86d31c01b3c6550c09c1c8320c00ed0bee4bcf9808e8c5b0ed3d8639301f4",
+      "completion_sha256": "25e022835ba19d0fa13820515499d190d87104efeca4cdb515d36c76f0c6ea76"
+    },
+    {
+      "pair_id": "paper_pair_182_148",
+      "arm": "pca75",
+      "task_id": "ec389aff8bfb76cdfcefd0d0226a5ee0266c179bb8bebc56229e0ced6e7df508",
+      "pca_metadata_sha256": "f35e3f59c1acd402e0670f292fb0a52a7bb0fb80b51833e674986490f82e3c72",
+      "completion_sha256": "936bf2e034d3529a2c133381b3db88c8699bd692e3bc6117be0e825a14ecd61d"
+    },
+    {
+      "pair_id": "paper_pair_260_254",
+      "arm": "pca75",
+      "task_id": "a617c4e6109d143a683574e3a8858ed85ca763d068495dcf04bdf609e9ba7993",
+      "pca_metadata_sha256": "8d6462cc44c3dddbc64fe8997c921774c62e5b02f2f8ff3364c2bcf17e56156b",
+      "completion_sha256": "cfcde7bd124602ff9ef42962c53a04cd9ef05a3df01067bf46d3c6184687cbce"
+    }
+  ],
+  "counts": {
+    "groups": 140,
+    "pairs": 160,
+    "tasks": 160,
+    "results": 8
+  },
+  "input_hashes": {
+    "registry": "906f2daae49b11602aa9dc38a42f3305f17a8595ec3cbc0ac4b61a7ffdbe5699",
+    "queue": "138f25f2a8acd4880942163c0e76d4fb828a0d3a3c445dba88b24246b9d8538a",
+    "results": "4fcac3ecfaf858b0490e33e2397246ea0b983f385702a03b3f948c3569359e8a"
+  },
+  "artifacts": {
+    "data.json": "41f2dd1af4666a730de581f416c45125c88d31fc5a87913565d4a76ce4049543",
+    "explorer.js": "62dccfe5f147f25a2fcb002ec80e212350e3d9d70d97b9e2d5dcbb3c87f62f48",
+    "queue.json": "f1dcff8ca9349fc195c2e39a82d4872dabd613cb7972f98c80da86b3ac8c4f89",
+    "registry.json": "cbbe16ef08d6c91c1df565f9f287cd06d6bb9bc5883d0b7b1ff39b16ba6f0d97",
+    "results.json": "5f772df1469540d3bdede5244c1dacdf1a034b8acbcdb105dfad98be12046226"
+  }
+}
