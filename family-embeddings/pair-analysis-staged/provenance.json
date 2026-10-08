@@ -2,7 +2,7 @@
   "stage_only": true,
   "published": false,
   "cohort_version": "published_pair_technical_intervals_v1",
-  "landing_sha256": "21e826c024aad4a5e826bdeb25fecc7ab13d232b57b6134b8cdbfbffc0a98f5d",
+  "landing_sha256": "6723f9a2d8f5ded98cd22785945408c29f4ab5a9530db3ddf56b9b8456ad5ac3",
   "metadata_enrichment_sources": [
     {
       "pair_id": "paper_pair_3_154",
@@ -337,6 +337,6 @@
     "queue.json": "bf8cdfabba230be38918f6dd97dbb20f25ca5715306fcc58764dc4255fdcb4dc",
     "registry.json": "d6348df434c0598fadd901bbf46c7a5f2202e428b9aa56a21f4a7f20b12a4922",
     "results.json": "481eaf44a041d69649b72a5b0170eec23bb4babafa104f255c64ecb9c686e4a0",
-    "deployment.json": "5b16e478f1546cdf2673b4e7738e22a778eafea851518a9f96fc1adbff713ccb"
+    "deployment.json": "4250106e48bb1857851bfb03a2823c8c22aecb9cb38867641e1e3f7677bfa464"
   }
 }
