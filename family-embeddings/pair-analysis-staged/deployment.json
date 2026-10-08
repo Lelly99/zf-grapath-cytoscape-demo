@@ -1,12 +1,8 @@
 {
-  "publication_authorized": true,
-  "authorization_date": "2026-10-08",
-  "authorization": "sorry i missed the request but i approve, we can move on",
-  "landing_url": "https://lelly99.github.io/zf-grapath-cytoscape-demo/family-embeddings/",
-  "bundle_built_as_stage": true,
-  "staging_provenance_sha256": "5101597395d2d2104ac613c45339cc2822ff5b7e9900356ba408d9b7532d2383",
-  "completed_pairs": 4,
-  "completed_reference_arms": 8,
-  "new_execution_status": "blocked_by_NVIDIA_driver_library_mismatch",
-  "preserved_historical_content": true
+  "snapshot": "progress_snapshot_20261008_002",
+  "execution_status": "running",
+  "completed_pairs": 21,
+  "completed_arms": 42,
+  "gpu_driver": "580.178.04",
+  "driver_blocker_resolved": true
 }
