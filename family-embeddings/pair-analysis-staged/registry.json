@@ -24429,7 +24429,7 @@
       "cause_resolved": false
     },
     "relationships": "68 published tutor groups and 72 separate candidate-parent groups; overlapping tiers, not140independentfamilies",
-    "analysis_priority": "Separate August-style shared tutor-family partitions requested; pair-conditioned results below are supplementary. Family-wide implementation/results are pending.",
+    "analysis_priority": "Primary: separate August-style shared tutor-family partitions. Pair queue stopped at a safe checkpoint; pair-conditioned results remain supplementary.",
     "gpu_driver": "580.178.04",
     "driver_blocker_resolved": true
   }
