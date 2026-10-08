@@ -1,11 +1,11 @@
 {
-  "snapshot": "website_progress_20261008T122134Z",
-  "updated_utc": "20261008T122134Z",
+  "snapshot": "website_progress_20261008T123135Z",
+  "updated_utc": "20261008T123135Z",
   "primary_design": "August-style separate shared family partitions",
   "family_wide_results_available": true,
   "completed_pairs": 45,
   "completed_arms": 90,
   "gpu_driver": "580.178.04",
-  "completed_family_partitions": 423,
-  "families_with_results": 27
+  "completed_family_partitions": 453,
+  "families_with_results": 29
 }
