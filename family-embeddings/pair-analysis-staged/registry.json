@@ -24413,18 +24413,24 @@
     "private_source_f6c3833db047": "219e27113d04bd3890948e493ba4070c8e7cb480072ae5c24c525071b41c5265"
   },
   "source_summary": {
-    "execution_status": "running",
-    "gpu_driver": "580.178.04",
-    "gpu_driver_blocker_resolved": true,
-    "snapshot_note": "Frozen progress snapshot; pending tasks continue in batch_006.",
+    "source_birds": 166,
+    "header_timing_retained_observations": 404832,
+    "unreviewed_below_5ms": 785,
+    "all_new_fits_stopped": false,
+    "reason": "",
     "approved_source_exception": {
       "approved": true,
-      "approval_date": "2026-10-08",
-      "scope": "one_verified_WAV_selected_intervals_only",
-      "diagnostic_path": "[private path omitted]",
-      "user_authorization": "sorry i missed the request but i approve, we can move on",
-      "metadata_changes_authorized": false,
-      "other_source_exceptions_authorized": false
-    }
+      "date": "2026-10-08",
+      "intervals": 16,
+      "selected_inputs_bitexact": true,
+      "recorded_source_sha256": "7a0f2ae3c349b5734d79b1733b8866f65e42c19f196cee728fb9b229068c740b",
+      "current_source_sha256": "1c51d9b77f2224db20a84ab0f1ab9407a0a8d4824185505e327ab2b71dec0bf8",
+      "scope": "one verified WAV; no other source exceptions",
+      "cause_resolved": false
+    },
+    "relationships": "68 published tutor groups and 72 separate candidate-parent groups; overlapping tiers, not140independentfamilies",
+    "analysis_priority": "Separate August-style shared tutor-family partitions requested; pair-conditioned results below are supplementary. Family-wide implementation/results are pending.",
+    "gpu_driver": "580.178.04",
+    "driver_blocker_resolved": true
   }
 }

@@ -403,7 +403,7 @@
       "group_id": "paper_tutor_145",
       "tutor_id": "LG_281_03",
       "pupil_id": "DB_35",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "6a3de9bb527dabce87c2a71978e7e1f69eef4ff6ccd2d18d6c9841c9bcb4ae7a",
@@ -437,9 +437,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 3550,
-      "estimated_bytes": 198913600
+      "estimated_bytes": 198913600,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 3550,
+        "ari_including_noise": 0.7442979070903947,
+        "ari_common_assigned": 0.8999767030053677,
+        "common_assigned_n": 3037,
+        "common_assigned_fraction": 0.8554929577464788,
+        "noise_transitions": {
+          "both_noise": 110,
+          "assigned_to_noise": 377,
+          "noise_to_assigned": 26,
+          "both_assigned": 3037
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_3_153",
@@ -2009,7 +2041,7 @@
       "group_id": "paper_tutor_5",
       "tutor_id": "Aq_2",
       "pupil_id": "LB_34_Y",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "35205b5b3d7b9c7f40cab254637807334f0da05f59e445fc245021acb567a6ae",
@@ -2043,9 +2075,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 3670,
-      "estimated_bytes": 213623360
+      "estimated_bytes": 213623360,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 3670,
+        "ari_including_noise": 0.6097889761286763,
+        "ari_common_assigned": 0.6874096304080809,
+        "common_assigned_n": 3270,
+        "common_assigned_fraction": 0.8910081743869209,
+        "noise_transitions": {
+          "both_noise": 135,
+          "assigned_to_noise": 150,
+          "noise_to_assigned": 115,
+          "both_assigned": 3270
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_218_34",
@@ -3041,7 +3105,7 @@
       "group_id": "paper_tutor_175",
       "tutor_id": "LP_5",
       "pupil_id": "Aq_12",
-      "status": "pending",
+      "status": "running",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "39ee2d8e3fddef4cc76c446490bf4a2932568991e145172059d4b9693d347b2c",
@@ -3103,7 +3167,7 @@
       "group_id": "paper_tutor_115",
       "tutor_id": "HP_10_Y_102",
       "pupil_id": "Y_163_HP",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "d559ad4af02a425f1b03ef08b7a7412579cc191435499108eaf934eadf1a1484",
@@ -3137,9 +3201,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 2453,
-      "estimated_bytes": 201499232
+      "estimated_bytes": 201499232,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 2453,
+        "ari_including_noise": 0.5701960406199574,
+        "ari_common_assigned": 0.719787218136589,
+        "common_assigned_n": 2141,
+        "common_assigned_fraction": 0.8728088055442316,
+        "noise_transitions": {
+          "both_noise": 56,
+          "assigned_to_noise": 248,
+          "noise_to_assigned": 8,
+          "both_assigned": 2141
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_195_35",
@@ -3634,7 +3730,7 @@
       "group_id": "paper_tutor_53",
       "tutor_id": "Brn_9_Y_112",
       "pupil_id": "Or_58_Wh",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "1d8395ff5a28abea21927b12a99f1b02bef3591bcef426c4920aece57d81c9d3",
@@ -3668,9 +3764,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 3171,
-      "estimated_bytes": 196652736
+      "estimated_bytes": 196652736,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 3171,
+        "ari_including_noise": 0.4340996497575916,
+        "ari_common_assigned": 0.4789729739308407,
+        "common_assigned_n": 2968,
+        "common_assigned_fraction": 0.9359823399558499,
+        "noise_transitions": {
+          "both_noise": 21,
+          "assigned_to_noise": 167,
+          "noise_to_assigned": 15,
+          "both_assigned": 2968
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_89_51",
@@ -4116,7 +4244,7 @@
       "group_id": "paper_tutor_12",
       "tutor_id": "Aq_4",
       "pupil_id": "Blk_17",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "befcf3b9f6b128f13f9e0d3582dfa49e330cfa4dd8b4d47ee87aeb6b05ad7624",
@@ -4150,9 +4278,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 4104,
-      "estimated_bytes": 198699264
+      "estimated_bytes": 198699264,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 4104,
+        "ari_including_noise": 0.7894227637397596,
+        "ari_common_assigned": 0.8023884662258083,
+        "common_assigned_n": 3982,
+        "common_assigned_fraction": 0.9702729044834308,
+        "noise_transitions": {
+          "both_noise": 17,
+          "assigned_to_noise": 65,
+          "noise_to_assigned": 40,
+          "both_assigned": 3982
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_130_25",
@@ -4272,7 +4432,7 @@
       "group_id": "paper_tutor_145",
       "tutor_id": "LG_281_03",
       "pupil_id": "DB_1",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "720dd593c06ada70495fdf204eea6ccf41a37adf39ae40de07ae8cc1153adcd8",
@@ -4306,9 +4466,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 2423,
-      "estimated_bytes": 192444352
+      "estimated_bytes": 192444352,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 2423,
+        "ari_including_noise": 0.842707463738473,
+        "ari_common_assigned": 0.9077979575628363,
+        "common_assigned_n": 2264,
+        "common_assigned_fraction": 0.9343788691704499,
+        "noise_transitions": {
+          "both_noise": 9,
+          "assigned_to_noise": 135,
+          "noise_to_assigned": 15,
+          "both_assigned": 2264
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_175_4",
@@ -5215,7 +5407,7 @@
       "group_id": "paper_tutor_72",
       "tutor_id": "DB_3",
       "pupil_id": "Or_57_HP",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "ff130254407f23efb2241012f3a978d19143920c384dd33944ba8eec95cdc035",
@@ -5249,9 +5441,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 2474,
-      "estimated_bytes": 195149120
+      "estimated_bytes": 195149120,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 2474,
+        "ari_including_noise": 0.8312194860323369,
+        "ari_common_assigned": 0.8996213011516813,
+        "common_assigned_n": 2258,
+        "common_assigned_fraction": 0.9126919967663703,
+        "noise_transitions": {
+          "both_noise": 26,
+          "assigned_to_noise": 188,
+          "noise_to_assigned": 2,
+          "both_assigned": 2258
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_144_169",
@@ -6371,7 +6595,7 @@
       "group_id": "paper_tutor_4",
       "tutor_id": "Aq_13",
       "pupil_id": "DB_48_HP",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "7fdc33aca5bcb045f9a7c58e52f49f6ed1919ddb70f75bd32eab53192d3c8a86",
@@ -6405,9 +6629,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 4130,
-      "estimated_bytes": 181984320
+      "estimated_bytes": 181984320,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 4130,
+        "ari_including_noise": 0.8407118845153173,
+        "ari_common_assigned": 0.9530172736572473,
+        "common_assigned_n": 3627,
+        "common_assigned_fraction": 0.8782082324455206,
+        "noise_transitions": {
+          "both_noise": 122,
+          "assigned_to_noise": 366,
+          "noise_to_assigned": 15,
+          "both_assigned": 3627
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_89_43",
@@ -6936,7 +7192,7 @@
       "group_id": "paper_tutor_145",
       "tutor_id": "LG_281_03",
       "pupil_id": "R_36",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "92e5d9db6c1069df69885392483c4b16065be467c88035654954f23d8f7ccd28",
@@ -6970,9 +7226,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 3124,
-      "estimated_bytes": 181841792
+      "estimated_bytes": 181841792,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 3124,
+        "ari_including_noise": 0.5042692771401172,
+        "ari_common_assigned": 0.5598517896583767,
+        "common_assigned_n": 2962,
+        "common_assigned_fraction": 0.9481434058898848,
+        "noise_transitions": {
+          "both_noise": 9,
+          "assigned_to_noise": 127,
+          "noise_to_assigned": 26,
+          "both_assigned": 2962
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_77_6",
@@ -7941,7 +8229,7 @@
       "group_id": "paper_tutor_51",
       "tutor_id": "Brn_8_Y_111",
       "pupil_id": "LP_32_HP",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "3793cbe3a4680ad0a2be97e90957f63e1a754d23d2abab6f315b16473d6f3702",
@@ -7975,9 +8263,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 3560,
-      "estimated_bytes": 213030400
+      "estimated_bytes": 213030400,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 3560,
+        "ari_including_noise": 0.983021935032194,
+        "ari_common_assigned": 0.9941544874904616,
+        "common_assigned_n": 3481,
+        "common_assigned_fraction": 0.977808988764045,
+        "noise_transitions": {
+          "both_noise": 19,
+          "assigned_to_noise": 52,
+          "noise_to_assigned": 8,
+          "both_assigned": 3481
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_182_149",
@@ -8467,7 +8787,7 @@
       "group_id": "paper_tutor_43",
       "tutor_id": "Brn_17_Y_179",
       "pupil_id": "Y_40_Y",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "1419e707f47f29baff56a8a32e94beec09cedd2a6fa11293d342379fa937780e",
@@ -8501,9 +8821,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 3701,
-      "estimated_bytes": 187240992
+      "estimated_bytes": 187240992,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 3701,
+        "ari_including_noise": 0.9827540080780945,
+        "ari_common_assigned": 1.0,
+        "common_assigned_n": 3625,
+        "common_assigned_fraction": 0.9794650094569035,
+        "noise_transitions": {
+          "both_noise": 39,
+          "assigned_to_noise": 7,
+          "noise_to_assigned": 30,
+          "both_assigned": 3625
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_176_52",
@@ -8871,7 +9223,7 @@
       "group_id": "paper_tutor_210",
       "tutor_id": "R_46",
       "pupil_id": "Wh_75_Wh_76",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "695068b8c1b49cd5d4f2c633733bb7859194a28640f6c972a177d9b29a7d1cfa",
@@ -8905,9 +9257,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 2860,
-      "estimated_bytes": 192924160
+      "estimated_bytes": 192924160,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 2860,
+        "ari_including_noise": 0.3750353144853875,
+        "ari_common_assigned": 0.4944576359392128,
+        "common_assigned_n": 2428,
+        "common_assigned_fraction": 0.848951048951049,
+        "noise_transitions": {
+          "both_noise": 39,
+          "assigned_to_noise": 307,
+          "noise_to_assigned": 86,
+          "both_assigned": 2428
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_236_76",
@@ -9057,7 +9441,7 @@
       "group_id": "paper_tutor_172",
       "tutor_id": "LP_23_HP",
       "pupil_id": "Or_101_DB",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "b71c2e8454dc4add78377c112eb160dd7ff7084cd13e7c18f348fe34147fd3a9",
@@ -9091,9 +9475,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 1852,
-      "estimated_bytes": 199482624
+      "estimated_bytes": 199482624,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 1852,
+        "ari_including_noise": 0.8944176096920359,
+        "ari_common_assigned": 0.9381222792045512,
+        "common_assigned_n": 1721,
+        "common_assigned_fraction": 0.9292656587473002,
+        "noise_transitions": {
+          "both_noise": 42,
+          "assigned_to_noise": 58,
+          "noise_to_assigned": 31,
+          "both_assigned": 1721
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_248_49",
@@ -9119,7 +9535,7 @@
       "group_id": "paper_tutor_248",
       "tutor_id": "Y_266",
       "pupil_id": "Brn_33",
-      "status": "pending",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "3d3d63948a903b101846f5d05e791bb20ddef6e9aaba5391f322e958befe1910",
@@ -9153,9 +9569,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 4903,
-      "estimated_bytes": 202709632
+      "estimated_bytes": 202709632,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 4903,
+        "ari_including_noise": 0.6182420218231391,
+        "ari_common_assigned": 0.7464152633272275,
+        "common_assigned_n": 4178,
+        "common_assigned_fraction": 0.8521313481541913,
+        "noise_transitions": {
+          "both_noise": 210,
+          "assigned_to_noise": 427,
+          "noise_to_assigned": 88,
+          "both_assigned": 4178
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_54_232",
@@ -9434,7 +9882,7 @@
       "group_id": "paper_tutor_245",
       "tutor_id": "Y_163_HP",
       "pupil_id": "DB_44_Y_192",
-      "status": "running",
+      "status": "completed",
       "status_reason": "audio technical eligibility not yet checked",
       "evidence_tier": "catalogued tutor–pupil relationship; exposure not independently verified",
       "task_id": "6428c66cb1a0d11139e15a537ccd41fdcf8a742e7096693723d980bca3b19f67",
@@ -9468,9 +9916,41 @@
       "duration_policy": "all technically valid intervals; no duration cutoff",
       "age_policy": "no age restriction",
       "technical_qc": "audio headers pending; finite waveform verified during preparation",
-      "results": [],
+      "results": [
+        {
+          "arm": "original",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        },
+        {
+          "arm": "pca75",
+          "setting": [
+            32,
+            20
+          ],
+          "status": "completed"
+        }
+      ],
       "n": 2180,
-      "estimated_bytes": 179073920
+      "estimated_bytes": 179073920,
+      "prepared_directory": "[private path omitted]",
+      "pca_directory": "[private path omitted]",
+      "agreement": {
+        "n": 2180,
+        "ari_including_noise": 0.7313336774027591,
+        "ari_common_assigned": 0.8597025190445703,
+        "common_assigned_n": 1865,
+        "common_assigned_fraction": 0.8555045871559633,
+        "noise_transitions": {
+          "both_noise": 120,
+          "assigned_to_noise": 139,
+          "noise_to_assigned": 56,
+          "both_assigned": 1865
+        }
+      }
     },
     {
       "published_pair_id": "paper_pair_207_219",
@@ -10303,5 +10783,5 @@
       "estimated_bytes": 248254944
     }
   ],
-  "elapsed_seconds": 822.247667701
+  "elapsed_seconds": 1351.4740704030003
 }

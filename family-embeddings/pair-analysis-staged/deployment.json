@@ -1,8 +1,9 @@
 {
-  "snapshot": "progress_snapshot_20261008_002",
-  "execution_status": "running",
-  "completed_pairs": 21,
-  "completed_arms": 42,
-  "gpu_driver": "580.178.04",
-  "driver_blocker_resolved": true
+  "snapshot": "website_progress_20261008T100916Z",
+  "updated_utc": "20261008T100916Z",
+  "primary_design": "August-style separate shared family partitions",
+  "family_wide_results_available": false,
+  "completed_pairs": 36,
+  "completed_arms": 72,
+  "gpu_driver": "580.178.04"
 }
