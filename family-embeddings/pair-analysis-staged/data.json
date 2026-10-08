@@ -108856,7 +108856,7 @@
       "cause_resolved": false
     },
     "relationships": "68 published tutor groups and 72 separate candidate-parent groups; overlapping tiers, not140independentfamilies",
-    "analysis_priority": "Primary: separate August-style shared tutor-family partitions. Pair queue stopped at a safe checkpoint; pair-conditioned results remain supplementary.",
+    "analysis_priority": "Primary: separate August-style shared tutor-family partitions. Pair queue stopped administratively at a safe checkpoint; interrupted supplemental tasks are not scientific failures. Pair-conditioned results remain supplementary.",
     "gpu_driver": "580.178.04",
     "driver_blocker_resolved": true
   },
@@ -123010,7 +123010,7 @@
         "cause_resolved": false
       },
       "relationships": "68 published tutor groups and 72 separate candidate-parent groups; overlapping tiers, not140independentfamilies",
-      "analysis_priority": "Primary: separate August-style shared tutor-family partitions. Pair queue stopped at a safe checkpoint; pair-conditioned results remain supplementary.",
+      "analysis_priority": "Primary: separate August-style shared tutor-family partitions. Pair queue stopped administratively at a safe checkpoint; interrupted supplemental tasks are not scientific failures. Pair-conditioned results remain supplementary.",
       "gpu_driver": "580.178.04",
       "driver_blocker_resolved": true
     }
