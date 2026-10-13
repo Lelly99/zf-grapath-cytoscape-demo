@@ -1,0 +1,11 @@
+{
+  "variant": "phate_cosine",
+  "tutor_id": "R_19_Y_132",
+  "n_observations": 3161,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "5808a95a746003850bc1935c204914e794d3d123fe61005de96c9d56ad388b37",
+    "index.html": "33013fbf675c00ecf911f59bb25d7c599f755dcbc5a8bfa54761af84c10ed646",
+    "representatives.json": "d2db4249ba1b3de826e13087f0b54fe448ba18e700e437eeb94dbe54780295e9"
+  }
+}

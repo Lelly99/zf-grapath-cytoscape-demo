@@ -1,0 +1,11 @@
+{
+  "variant": "umap_euclidean",
+  "tutor_id": "Wh_1",
+  "n_observations": 12674,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "e144fb96ab5fbf11ca6a4ce5b12ac9ea6cf56029f8f735b6eaf760b6cd2bbbbd",
+    "index.html": "74e973d13c2e2d3cb9b7b2ed2306d0a6cd5643e9b017548dedab2333562dad63",
+    "representatives.json": "88548a2240af33b6a21da7ae0746e8d8ef48ede79f586d2065ae3141e77e125f"
+  }
+}

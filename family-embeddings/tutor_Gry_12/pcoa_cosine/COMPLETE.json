@@ -1,0 +1,11 @@
+{
+  "variant": "pcoa_cosine",
+  "tutor_id": "Gry_12",
+  "n_observations": 25988,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "41071acd2696238b5254b9d53883972a40f25632f32ad9376a7d8ca1415f9440",
+    "index.html": "51d1690363c5629979ac74d63853870c2130f763191ef80ff94289eaa5577b46",
+    "representatives.json": "7e121461b64e4215e321cc8d04b3c8ca1e1d7db788fffd248b7503ab685342d8"
+  }
+}

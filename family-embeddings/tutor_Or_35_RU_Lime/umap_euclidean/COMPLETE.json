@@ -1,0 +1,11 @@
+{
+  "variant": "umap_euclidean",
+  "tutor_id": "Or_35_RU_Lime",
+  "n_observations": 2003,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "46237b476997a46bea0421924a487ba7df9bb8d83c12910d3a7565e255b6aaa2",
+    "index.html": "c833da0a021f188ae6e4f41a7afd5fe633de5976d413be378ca06c40ce62b983",
+    "representatives.json": "3c4342a79583d2afa16513cfadf6d6929084cc8addcaeade5d4d3807c14f3bab"
+  }
+}

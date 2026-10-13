@@ -1,0 +1,11 @@
+{
+  "variant": "umap_euclidean",
+  "tutor_id": "R_19_Y_132",
+  "n_observations": 3161,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "93f0729ba9449b601ec6678fe0c3c6f00b5ea120801de271685522777ece529a",
+    "index.html": "22fe426577dcc68aebfa4fd425e6f2a248aee48ee44986cf525af7ee1712273d",
+    "representatives.json": "e7f028ebf21a8e907391478a7ceab34588955bd0a8074b292fd5db808d4380be"
+  }
+}

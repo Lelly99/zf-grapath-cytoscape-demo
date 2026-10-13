@@ -1,0 +1,11 @@
+{
+  "variant": "umap_euclidean",
+  "tutor_id": "Gry_35_HP",
+  "n_observations": 7263,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "de455bbdb3139e747184d5ad57b7f4b594000f2c658879698069ecef96a5b78c",
+    "index.html": "f3a3701ac83f0f423b158502112e3255a4bcafffae4c1a065697185adb30a624",
+    "representatives.json": "b0b0fc73bde8a7b9ec7c85efc25f4cc29a202650eba18a6e13d75db5814bcfb3"
+  }
+}

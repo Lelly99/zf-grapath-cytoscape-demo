@@ -1,0 +1,11 @@
+{
+  "variant": "pcoa_cosine",
+  "tutor_id": "Lime_7",
+  "n_observations": 3987,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "43b51ddc302e0dc873726184e291a8ba56a395bdb01d91e89c87df221bd423fd",
+    "index.html": "1b3926a6874eb996803984bb01a3d0b10db899d6988cb6b746cc173ad79bfbb2",
+    "representatives.json": "506663727b2d1126bbdd24de8134d7a0f8eb25e2df3552afc55b1aa09f04e932"
+  }
+}

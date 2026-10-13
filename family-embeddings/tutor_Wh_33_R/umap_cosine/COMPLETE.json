@@ -1,0 +1,11 @@
+{
+  "variant": "umap_cosine",
+  "tutor_id": "Wh_33_R",
+  "n_observations": 9955,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "173b0391dd4b861485d878923b84bd4e1ab69bb6adc283a78b059b8cc2919210",
+    "index.html": "902600773193cf622312ae78839074ce22504188e6dd59993c6c76d1422a7345",
+    "representatives.json": "9fc0f7cc40d43665e1dce53038fa4f54b8b759a8f5f9eeda265c39018e68aa89"
+  }
+}

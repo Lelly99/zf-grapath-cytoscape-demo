@@ -1,0 +1,11 @@
+{
+  "variant": "pcoa_cosine",
+  "tutor_id": "LG_181_03",
+  "n_observations": 12537,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "05e0f2fcf9fcdcef23acafefeb98db4d37dbad197bd457b13639ab5f656197fe",
+    "index.html": "596ec52ef3c07d7f3a366659110bc5f6b1d0996e2ba192129bdea0c3ff3bca83",
+    "representatives.json": "ddb8231859fc76b28f6783b8fe0d51c8a4abef73447960a8959507acc0e79f4b"
+  }
+}

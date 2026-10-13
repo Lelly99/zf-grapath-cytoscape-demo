@@ -1,0 +1,11 @@
+{
+  "variant": "umap_euclidean",
+  "tutor_id": "Lime_24_Y_109",
+  "n_observations": 3600,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "9e8f6ac1f849e51186e93f02f8d1fe7e9d2735d678bc9ecb72d8d4a4bedb322f",
+    "index.html": "f3435546bc07953a010492f2fc6b7f2376edeabf8e968577edcbb37d69ddf381",
+    "representatives.json": "91068bcd319ce35ffc90b47ed9ada28548b3a88ba40154e139e369f2fef5e527"
+  }
+}

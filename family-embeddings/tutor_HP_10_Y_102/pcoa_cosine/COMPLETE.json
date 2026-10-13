@@ -1,0 +1,11 @@
+{
+  "variant": "pcoa_cosine",
+  "tutor_id": "HP_10_Y_102",
+  "n_observations": 11404,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "2babc026df7098e9619115af8537ab9184cd0207525043e7c1160de4a5984e6f",
+    "index.html": "3e76a3d2e0ca68ac203674aa6c9fd6126ebfbab660a6283cfc95e2b4d7ffbde8",
+    "representatives.json": "b710c99440219e07d8646aa159b4c4fd0ffc1aa13a639e207a06da8bbac9f673"
+  }
+}

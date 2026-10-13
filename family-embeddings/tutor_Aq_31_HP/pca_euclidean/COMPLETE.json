@@ -1,0 +1,11 @@
+{
+  "variant": "pca_euclidean",
+  "tutor_id": "Aq_31_HP",
+  "n_observations": 5092,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "feb747e89736feef8f502a8e2f46c9f38fdf9a355b1ac2670e255f923d9a658f",
+    "index.html": "35f31e52edde3c79184b837e95f998b4d16f8af26ec952f663fa4c7649acc829",
+    "representatives.json": "453c17a8052539eddfe3ba1d655ae36a979ecff6c728c240905d417285fc2b46"
+  }
+}

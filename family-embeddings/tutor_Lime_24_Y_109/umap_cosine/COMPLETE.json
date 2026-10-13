@@ -1,0 +1,11 @@
+{
+  "variant": "umap_cosine",
+  "tutor_id": "Lime_24_Y_109",
+  "n_observations": 3600,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "11f098b50d2bf47a66854033161d4860df16f99115a4cd24981ade64968c259a",
+    "index.html": "94cb7666fcf621c2fb4b36cb10f5f78937653071291f814e60a637b991b75f56",
+    "representatives.json": "92f85da8315586c5bd3e10fe9b0bce04bfc44839bcc1d4446ca83ca2161e1433"
+  }
+}

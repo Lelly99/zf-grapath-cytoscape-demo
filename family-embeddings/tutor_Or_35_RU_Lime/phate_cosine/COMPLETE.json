@@ -1,0 +1,11 @@
+{
+  "variant": "phate_cosine",
+  "tutor_id": "Or_35_RU_Lime",
+  "n_observations": 2003,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "391fc6479e0ecf57c1f896874250628f611bb1d7c7030d15ee7f185a7e368b19",
+    "index.html": "b0f17492a898516f138b224f7ee80d0106137eb3bfd27ef04f0233cbd76b98d0",
+    "representatives.json": "b31a5279aa3259a49984184eb0f982ad64a2897c5ac610ac45c414e31f09ebfb"
+  }
+}

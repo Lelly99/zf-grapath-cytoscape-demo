@@ -1,0 +1,11 @@
+{
+  "variant": "phate_euclidean",
+  "tutor_id": "Brn_7",
+  "n_observations": 14942,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "71751f016380f44242a6b18f978e46f0e83c478a309eb1aac575a2792b047f70",
+    "index.html": "80e6b198b0e8fdd38fe71c3ef1622bacfdb2b9f5bf8109249b74ef65abc8b525",
+    "representatives.json": "52b48622d61b1d385a6c45a8a835316d5192b6c94118b3b229a14031b28da138"
+  }
+}

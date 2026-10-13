@@ -1,0 +1,11 @@
+{
+  "variant": "phate_euclidean",
+  "tutor_id": "Or_35_RU_Lime",
+  "n_observations": 2003,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "9120420265a293511021ff02e4270785248d27f07543809705ab6fd561ac24c6",
+    "index.html": "267b3ad2276364f207436145b27b712981d19539e3aa6896bdf73169bda1b885",
+    "representatives.json": "8353fc9bd0860f62a624d2e31673b2242ee27d7bb1d7a07b82eedf77525fc2d3"
+  }
+}

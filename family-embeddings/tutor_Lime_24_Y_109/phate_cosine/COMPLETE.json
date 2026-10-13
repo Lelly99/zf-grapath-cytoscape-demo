@@ -1,0 +1,11 @@
+{
+  "variant": "phate_cosine",
+  "tutor_id": "Lime_24_Y_109",
+  "n_observations": 3600,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "2fd60ceef45b649b474ab190744b2a9d6f632c0febe331d9d612fc7f24a1ad34",
+    "index.html": "3ecb5661b816e1b806c180f75188c6fffdd75a162a45e6a3ea303b3ea8fbeae8",
+    "representatives.json": "a902ae325cba89824a07f382d00c3034a467fa5a3cc7c20cea2ff9c964b07c53"
+  }
+}

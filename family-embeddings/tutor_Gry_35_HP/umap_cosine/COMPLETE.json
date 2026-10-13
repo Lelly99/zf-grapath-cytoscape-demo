@@ -1,0 +1,11 @@
+{
+  "variant": "umap_cosine",
+  "tutor_id": "Gry_35_HP",
+  "n_observations": 7263,
+  "n_representatives": 16,
+  "files": {
+    "callouts.png": "5f6cdc1080e7261d46b44b177d1f25481cb9776f818b59206a616a4c4183b8fd",
+    "index.html": "817eb6ade764446c9df3f824179900e77fdfcbe622060cb046de52d687206c33",
+    "representatives.json": "7b662f7b90961a99ff0f316fb9891c989520fbc62ee2e01458b84f85210a327c"
+  }
+}
