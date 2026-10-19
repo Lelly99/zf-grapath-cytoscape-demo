@@ -7,10 +7,10 @@
   const html = String.raw;
   const reviewTopics = [
     ['Stage S7 inference', 'The cross-lineage association needs a pre-stated primary analysis, multiple-comparison handling, effect-size intervals, and a relatedness-aware model before it can be presented as confirmatory.'],
-    ['Counts and cohorts', 'The raw → valid → excluded → analysed flow, and the 24 Figure 2a lineages versus the 25-label local workbook distinction, need an explicit reconciliation table.'],
-    ['Estimator and clustering checks', 'Entropy sample-size bias, HDBSCAN stability, and the Hopkins null/orientation need validation or sensitivity analyses before biological ranking or general inference.'],
+    ['Counts and cohorts', 'The raw → valid → excluded → analysed flow remains to be reconciled. Stage S7’s 23 all-analysable lineages are reported separately from the frozen 24-lineage Figure 2a cohort, whose 22 analysable members have not yet been computed.'],
+    ['Estimator and clustering checks', 'Plug-in entropy is biased downward at small N (including Lime22, n = 104), clustering stability needs validation, and Hopkins-null calibration remains open. The reported Hopkins orientation and convex-hull null are now defined.'],
     ['Segmentation and duration', 'Duration filtering, manual quality control, and a duration-normalised sensitivity analysis remain to be documented before interpreting the categories as biological syllables.'],
-    ['Citation and definitions', 'The paper citation/DOI, tutor relationship definition, and the exact evenness normalisation have not been supplied in the published source.']
+    ['Tutor relationship definition', 'Tutor/pupil means the published tutor label and a catalogued mapping; exposure is not independently verified. The genetic, rearing, and exposure wording remains unresolved for some rows.']
   ];
 
   function make(tag, attrs = {}, content = '') {
@@ -123,7 +123,7 @@
     if (!section) return;
     const definitions = make('details', {
       class: 'definitions',
-      html: '<summary>Definitions and reading conventions</summary><p><strong>Tutor</strong> and <strong>pupil</strong> are analysis roles within a family. They do not by themselves establish genetic, rearing, or exposure status; compound or unresolved identifiers remain row-specific.</p><p><strong>Entropy:</strong> H = −Σ pᵢ log₂pᵢ, computed over category occupancy. <strong>Effective categories</strong> = 2<sup>H</sup>. “Noise included” counts HDBSCAN noise as one category; “assigned only” excludes it. The exact evenness normalisation requires review.</p><p><strong>Min. cluster size</strong> is the fraction of observations N used for HDBSCAN; a larger fraction produces a coarser partition. The figures and tables identify their representation and fraction where recorded.</p><p><strong>Interpretation:</strong> a shared partition is fitted only within the displayed tutor family. It does not imply a shared category vocabulary between families.</p>'
+      html: '<summary>Short glossary</summary><p><strong>Tutor</strong> and <strong>pupil</strong> are published-label and catalogued analysis roles; exposure is not independently verified. Compound or unresolved identifiers remain row-specific.</p><p><strong>Entropy:</strong> H = −Σ pᵢ log₂pᵢ; <strong>effective categories</strong> = 2<sup>H</sup>, the number of equally likely categories with the same H (Hill number of order 1). Inline notes below each table give the denominator and noise treatment.</p><p><strong>Evenness:</strong> H / log₂(K), with K occupied categories (noise is one category when included); it is undefined when K &lt; 2. <strong>Min. cluster size/min. samples:</strong> ceil(fraction × N), with fractions 0.005, 0.01, and 0.02; a larger fraction yields a coarser partition.</p><p><strong>Interpretation:</strong> a shared partition is fitted only within the displayed tutor family. Equal H does not establish shared categories, and category overlap is not measured by these tables.</p>'
     });
     section.insertBefore(definitions, section.querySelector('#af-details'));
   }

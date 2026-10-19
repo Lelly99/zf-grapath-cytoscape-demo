@@ -9,8 +9,10 @@
   const number = (value, digits = 4) => typeof value === 'number' && Number.isFinite(value) ? Number(value.toFixed(digits)) : (value ?? 'not available');
   const readableState = (state) => {
     const raw = String(state?.original_primary_state?.error || state?.error || state?.hopkins_error || '');
-    if (!raw) return state?.status || 'not available';
-    if (/resource|memory|workspace|gpu/i.test(raw)) return 'Blocked: the available GPU memory is insufficient for this variant.';
+    if (/numeric_learning_rate|numeric learning_rate|BACKEND_COMPATIBILITY/i.test(raw)) return 'Not run: stopped by the project numeric-learning-rate guard; GPU-native adaptive/LR=200 t-SNE is a separately labelled sensitivity.';
+    if (/PHATE.*workspace|host estimate|worker RSS|8 GiB cap/i.test(raw)) return 'Blocked: host memory limit (8 GiB).';
+    if (/CUDA|GPU limit|full PCA/i.test(raw)) return 'Blocked: GPU memory limit (6 GiB).';
+    if (!raw) return state?.status === 'clustering' ? 'In progress.' : state?.status ? 'Not recorded as completed.' : 'Not recorded.';
     if (/pending|not attempted/i.test(raw)) return 'Pending: no validated result is available yet.';
     return 'Unavailable: this variant has no validated result in this snapshot.';
   };
@@ -37,7 +39,7 @@
     const familySelect = $('af-family'), variantSelect = $('af-variant'), fractionSelect = $('af-resolution');
     $('af-refresh')?.remove();
     $('af-repair-status')?.remove();
-    setOptions(familySelect, families.map((family) => ({value:family.tutor_id,label:`${family.tutor_id} · ${family.pupil_ids.length} pupils · N ${family.n_observations.toLocaleString()}`})));
+    setOptions(familySelect, families.map((family) => ({value:family.tutor_id,label:`${family.tutor_id}${['Aq_12','Gry_12'].includes(family.tutor_id) ? '*' : ''} · ${family.pupil_ids.length} pupils · N ${family.n_observations.toLocaleString()}`})));
     const date = humanDate(data.updated_utc);
     $('af-progress').textContent = `${data.results.length} validated family partitions across ${new Set(data.results.map((result) => result.family_id)).size} families. Data snapshot: ${date}.`;
 
@@ -70,10 +72,13 @@
         const mean = pupils.length ? pupils.reduce((total,row) => total+row.entropy_bits,0)/pupils.length : null;
         return {mode,tutor:tutor?.entropy_bits,mean_pupil:mean,pupils_with_h:pupils.length,eligible_pupils:family.pupil_ids.length,contrast:typeof tutor?.entropy_bits==='number' && mean!==null ? mean-tutor.entropy_bits : null};
       }) : [];
-      $('af-comparison').innerHTML = result ? table('Shared-partition tutor–pupil summary', comparisons, [['mode','Noise treatment'],['tutor','Tutor H (bits)'],['mean_pupil','Mean pupil H (bits)'],['pupils_with_h','Pupils with defined H'],['eligible_pupils','Eligible pupils'],['contrast','Mean pupil − tutor H (bits)']])+'<p>Each pupil has equal weight. These are descriptive family-specific contrasts, not independent biological replicates.</p>' : '<p class="unavailable">No completed shared partition.</p>';
+      $('af-comparison').innerHTML = result ? table('Shared-partition tutor–pupil summary', comparisons, [['mode','Noise treatment'],['tutor','Tutor H (bits)'],['mean_pupil','Mean pupil H (bits, equal-weight)'],['pupils_with_h','Pupils with defined H'],['eligible_pupils','Eligible pupils'],['contrast','Mean pupil − tutor H (bits)']])+'<p>Each pupil has equal weight. These are descriptive family-specific contrasts, not independent biological replicates. See the inline definition for why tutor H is not compared with pooled-pupil H.</p>' : '<p class="unavailable">No completed shared partition.</p>';
       const hopkins = data.hopkins.find((item) => item.family_id===family.family_id && item.variant===variant);
-      $('af-hopkins').innerHTML = hopkins ? table('Hopkins descriptive summary', hopkins.rows.map((row) => ({...row,balanced:row.balanced?'yes':'no'})), [['role','Pool'],['metric','Metric'],['balanced','Count balanced'],['n_available','N available'],['n_per_repeat','N / repeat'],['mean','Mean'],['standard_deviation','Monte Carlo SD'],['status','Status']]) : '<p class="unavailable">No Hopkins summary is available for this selection. A null calibration remains a review item.</p>';
-      const stateRows = families.flatMap((item) => Object.entries(item.variant_states || {}).filter(([,state]) => state.status!=='complete').map(([name,state]) => ({tutor:item.tutor_id,variant:variantLabel(name),status:state.status || 'pending',reason:readableState(state)})));
+      const hopkinsRows = hopkins?.rows.map((row) => ({...row,balanced:row.balanced?'yes':'no'}));
+      const hopkinsColumns = [['role','Pool'],['metric','Metric'],['balanced','Count balanced'],['n_available','N available'],['n_per_repeat','N / repeat'],['mean','Mean'],['standard_deviation','Monte Carlo SD']];
+      if (hopkinsRows?.some((row) => row.status)) hopkinsColumns.push(['status','Status']);
+      $('af-hopkins').innerHTML = hopkins ? table('Hopkins descriptive summary', hopkinsRows, hopkinsColumns) : '<p class="unavailable">No Hopkins summary is available for this selection. Hopkins was computed for 265 family × embedding combinations, not every partition, because it depends on the embedding rather than the resolution fraction; null calibration remains a review item.</p>';
+      const stateRows = families.flatMap((item) => Object.entries(item.variant_states || {}).filter(([,state]) => state.status!=='completed').map(([name,state]) => ({tutor:item.tutor_id,variant:variantLabel(name),status:state.status === 'clustering' ? 'in progress' : (state.status || 'not recorded'),reason:readableState(state)})));
       $('af-states').innerHTML = stateRows.length ? table('Unavailable or pending variants',stateRows,[['tutor','Tutor'],['variant','Embedding'],['status','State'],['reason','Reader summary']]) : '<p>All listed variants have validated summaries.</p>';
     }
     variants(families[0]);
