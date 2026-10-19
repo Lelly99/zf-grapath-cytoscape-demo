@@ -1,0 +1,71 @@
+{
+  "n_specs_normalized": 42,
+  "n_specs_raw": 42,
+  "paper_reference": {
+    "slope": 0.36352892432946493,
+    "slope_ci": [
+      0.19778430572008188,
+      0.5286009110665078
+    ],
+    "d_diff": 0.16553737680280828,
+    "d_diff_ci": [
+      0.09198676526952103,
+      0.22189026705070178
+    ],
+    "rev_share": 0.3235294117647059,
+    "rev_share_ci": [
+      0.19080882352941178,
+      0.45588235294117646
+    ],
+    "n_tutors": 68
+  },
+  "pre_declared_display_rule": "noise_included, fraction 0.01, pcoa_cosine/umap_euclidean/phate_euclidean (historical) + tsne_euclidean (LR=200); primary scale normalized",
+  "normalized": {
+    "median_slope": 0.35697150181170473,
+    "slope_range": [
+      0.05513129241836483,
+      0.9475197576475661
+    ],
+    "share_slope_below_null_tau1_95": 0.8095238095238095,
+    "share_slope_below_null_tau10_95": 0.7380952380952381,
+    "median_d_diff": 0.11379504117683407,
+    "share_d_diff_above_null_tau10_95": 0.7380952380952381,
+    "share_d_diff_above_null_tau1_95": 0.7857142857142857,
+    "median_rev_share": 0.36038961038961037,
+    "share_rev_above_null_tau10_95": 0.2857142857142857,
+    "median_null10_reliability": 0.9606142277751328,
+    "median_disattenuated_slope_tau10": 0.3718730934886202,
+    "by_source_median_slope": {
+      "historical": 0.3121399179294071,
+      "lr200_tsne": 0.7871460324963792
+    },
+    "by_source_median_d_diff": {
+      "historical": 0.12318045059141558,
+      "lr200_tsne": 0.05891477982885332
+    }
+  },
+  "raw": {
+    "median_slope": 0.4181143646356392,
+    "slope_range": [
+      0.14615280833393968,
+      1.001792751902057
+    ],
+    "share_slope_below_null_tau1_95": 0.7619047619047619,
+    "share_slope_below_null_tau10_95": 0.7142857142857143,
+    "median_d_diff": 0.4308682081590398,
+    "share_d_diff_above_null_tau10_95": 0.7142857142857143,
+    "share_d_diff_above_null_tau1_95": 0.7380952380952381,
+    "median_rev_share": 0.33634222919937207,
+    "share_rev_above_null_tau10_95": 0.09523809523809523,
+    "median_null10_reliability": 0.9656372789007919,
+    "median_disattenuated_slope_tau10": 0.4351451058433381,
+    "by_source_median_slope": {
+      "historical": 0.32984889174251103,
+      "lr200_tsne": 0.9319103442284217
+    },
+    "by_source_median_d_diff": {
+      "historical": 0.5254023379053075,
+      "lr200_tsne": 0.06252233650237106
+    }
+  }
+}
