@@ -1,0 +1,172 @@
+{
+  "task_provenance": {
+    "seconds": 0.6,
+    "started": "2026-10-19T17:58:31+0200",
+    "status": "completed",
+    "summary": {
+      "large_results_sha256": "44af42d04bc9b55e4fafb6bdc14a4e2bd075f7e4a3fb4453d3cce9305ad6259c",
+      "only_in_s2_csv": 98,
+      "only_in_s2_csv_found_in_batch009_results": 2,
+      "only_in_s2_csv_found_in_large_results": 96,
+      "only_in_s2_csv_unexplained": 0,
+      "only_in_s2_csv_with_matching_entropy": 98,
+      "only_in_snapshot": 0,
+      "partitions_only_in_s2_csv": 49,
+      "pcoa_cosine_0.02_families_only_in_s2_csv": [
+        "tutor_Y_875"
+      ],
+      "rows_in_both": 1594,
+      "s2_csv_rows": 1692,
+      "s2_csv_sha256": "81d279ad99c1ed72079ca2a1ef1d9dcc361e8f000261082527a0d3f6777380cb",
+      "s7_joined_table_available": false,
+      "s7_pcoa_0.02_lineages_not_in_published_snapshot": [],
+      "snapshot_sha256": "22092d2960461f6c4765262801ead95b551d26b18747a569f116a7938ad77e9e",
+      "snapshot_tutor_rows": 1594,
+      "snapshot_updated_utc": "20261013T111719Z",
+      "value_mismatches": 0
+    },
+    "task": "provenance"
+  },
+  "task_overlap": {
+    "seconds": 5.0,
+    "started": "2026-10-19T18:03:48+0200",
+    "status": "completed",
+    "summary": {
+      "clustered_only": {
+        "fraction_above_null_q95": 0.9988016776512882,
+        "median_excess_jsd_bits": 0.688337,
+        "median_jsd_bits": 0.69619,
+        "median_null_jsd_bits": 0.004706,
+        "median_overlap_coefficient": 0.191494,
+        "pairs": 1669
+      },
+      "noise_included": {
+        "fraction_above_null_q95": 1.0,
+        "median_excess_jsd_bits": 0.609682,
+        "median_jsd_bits": 0.615828,
+        "median_null_jsd_bits": 0.004132,
+        "median_overlap_coefficient": 0.258117,
+        "pairs": 1669
+      },
+      "null_replicates_per_pair": 200,
+      "pairs": 3338
+    },
+    "task": "overlap"
+  },
+  "task_bias": {
+    "seconds": 15.4,
+    "started": "2026-10-19T18:03:32+0200",
+    "status": "completed",
+    "summary": {
+      "bird_rows": 4932,
+      "birds_with_n_below_200": 153,
+      "clustered_only": {
+        "max_abs_change_plugin_to_mm": 0.158677,
+        "mean_gap_miller_madow": -0.06035261104140526,
+        "mean_gap_plugin": -0.06399675282308658,
+        "mean_gap_rarefied": -0.05091243036386448,
+        "partitions": 797,
+        "rarefied_partitions": 797
+      },
+      "family_gap_rows": 1594,
+      "max_correction_bits": 0.164879,
+      "median_correction_bits_all": 0.0057865,
+      "median_correction_bits_n_below_200": 0.063415,
+      "noise_included": {
+        "max_abs_change_plugin_to_mm": 0.120975,
+        "mean_gap_miller_madow": -0.059691321204516944,
+        "mean_gap_plugin": -0.06258898996235884,
+        "mean_gap_rarefied": -0.05083491718946048,
+        "partitions": 797,
+        "rarefied_partitions": 797
+      }
+    },
+    "task": "bias"
+  },
+  "task_hopkins": {
+    "seconds": 103.1,
+    "started": "2026-10-19T18:03:53+0200",
+    "status": "completed",
+    "summary": {
+      "gaussian_single_blob_mean_by_n": {
+        "30": 0.598729,
+        "100": 0.474257,
+        "300": 0.347505,
+        "1000": 0.221081,
+        "3000": 0.127786,
+        "10000": 0.061357,
+        "30000": 0.028502
+      },
+      "n_grid": [
+        30,
+        100,
+        300,
+        1000,
+        3000,
+        10000,
+        30000
+      ],
+      "rows": 35,
+      "shapes": [
+        "uniform_square",
+        "uniform_l_shape",
+        "uniform_annulus",
+        "gaussian_single_blob",
+        "three_separated_blobs"
+      ],
+      "three_separated_blobs_mean_by_n": {
+        "30": 0.063108,
+        "100": 0.035113,
+        "300": 0.016834,
+        "1000": 0.007746,
+        "3000": 0.003701,
+        "10000": 0.001654,
+        "30000": 0.000773
+      },
+      "uniform_annulus_mean_by_n": {
+        "30": 0.406862,
+        "100": 0.288041,
+        "300": 0.162376,
+        "1000": 0.063415,
+        "3000": 0.022892,
+        "10000": 0.007078,
+        "30000": 0.002384
+      },
+      "uniform_l_shape_mean_by_n": {
+        "30": 0.536341,
+        "100": 0.454933,
+        "300": 0.319852,
+        "1000": 0.146961,
+        "3000": 0.055271,
+        "10000": 0.016531,
+        "30000": 0.005491
+      },
+      "uniform_square_mean_by_n": {
+        "30": 0.569939,
+        "100": 0.527128,
+        "300": 0.51183,
+        "1000": 0.503799,
+        "3000": 0.501167,
+        "10000": 0.50068,
+        "30000": 0.499999
+      }
+    },
+    "task": "hopkins"
+  },
+  "task_counts": {
+    "seconds": 2.2,
+    "started": "2026-10-19T18:29:37+0200",
+    "status": "completed",
+    "summary": {
+      "birds_in_published_families": 166,
+      "birds_with_inventory": 166,
+      "issue_kinds": {},
+      "issues": 0,
+      "rejected_n_total": 1793,
+      "retained_n_total": 404832,
+      "short_below_5ms_total": 785,
+      "source_n_total": 406625
+    },
+    "task": "counts"
+  }
+}

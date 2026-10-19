@@ -1,0 +1,502 @@
+[
+  {
+    "family_id": "tutor_LB_12",
+    "status": "adopted",
+    "lane": "primary_overnight",
+    "N": 6236,
+    "frames": 95,
+    "N_x_frames_millions": 0.592,
+    "fit_seconds": null,
+    "reason": "unknown"
+  },
+  {
+    "family_id": "tutor_DB_1",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 6459,
+    "frames": 207,
+    "N_x_frames_millions": 1.337,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_DG_4",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 7712,
+    "frames": 117,
+    "N_x_frames_millions": 0.902,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Y_266",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 9295,
+    "frames": 189,
+    "N_x_frames_millions": 1.757,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_LP_4",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 10081,
+    "frames": 160,
+    "N_x_frames_millions": 1.613,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Aq_13",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 10716,
+    "frames": 163,
+    "N_x_frames_millions": 1.747,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Wh_1",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 12674,
+    "frames": 165,
+    "N_x_frames_millions": 2.091,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Brn_7",
+    "status": "completed",
+    "lane": "primary_overnight",
+    "N": 14942,
+    "frames": 143,
+    "N_x_frames_millions": 2.137,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Aq_12",
+    "status": "failed",
+    "lane": "primary_overnight",
+    "N": 17874,
+    "frames": 234,
+    "N_x_frames_millions": 4.183,
+    "fit_seconds": null,
+    "reason": "cuda_out_of_memory"
+  },
+  {
+    "family_id": "tutor_Gry_12",
+    "status": "failed",
+    "lane": "primary_overnight",
+    "N": 25988,
+    "frames": 339,
+    "N_x_frames_millions": 8.81,
+    "fit_seconds": null,
+    "reason": "unknown"
+  },
+  {
+    "family_id": "tutor_LB_12",
+    "status": "completed",
+    "lane": "adopted_pilot",
+    "N": null,
+    "frames": null,
+    "N_x_frames_millions": 0.0,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Blk_17",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 1468,
+    "frames": 117,
+    "N_x_frames_millions": 0.172,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Brn_8_Y_111",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3560,
+    "frames": 110,
+    "N_x_frames_millions": 0.392,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_DG_23_Y_148",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3741,
+    "frames": 110,
+    "N_x_frames_millions": 0.412,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Or_51_Wh",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 4907,
+    "frames": 93,
+    "N_x_frames_millions": 0.456,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Aq_31_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 5092,
+    "frames": 98,
+    "N_x_frames_millions": 0.499,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_R_29_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 5180,
+    "frames": 91,
+    "N_x_frames_millions": 0.471,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Wh_28_Y",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 7303,
+    "frames": 95,
+    "N_x_frames_millions": 0.694,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_LP_23_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 1852,
+    "frames": 198,
+    "N_x_frames_millions": 0.367,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_LP_61_DG",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 1972,
+    "frames": 257,
+    "N_x_frames_millions": 0.507,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Or_35_RU_Lime",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 2003,
+    "frames": 138,
+    "N_x_frames_millions": 0.276,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Y_163_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 2180,
+    "frames": 151,
+    "N_x_frames_millions": 0.329,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_R_28_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 2372,
+    "frames": 346,
+    "N_x_frames_millions": 0.821,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_DB_26_Y_689",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 2460,
+    "frames": 251,
+    "N_x_frames_millions": 0.617,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_R_19_Y_132",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3161,
+    "frames": 258,
+    "N_x_frames_millions": 0.816,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_LP_16_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3176,
+    "frames": 148,
+    "N_x_frames_millions": 0.47,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_R_13",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3598,
+    "frames": 179,
+    "N_x_frames_millions": 0.644,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Lime_24_Y_109",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3600,
+    "frames": 162,
+    "N_x_frames_millions": 0.583,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_DG_37_HP",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3704,
+    "frames": 127,
+    "N_x_frames_millions": 0.47,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Lime_7",
+    "status": "completed",
+    "lane": "secondary_morning",
+    "N": 3987,
+    "frames": 196,
+    "N_x_frames_millions": 0.781,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_HP_6_Y_Wh",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 7837,
+    "frames": 353,
+    "N_x_frames_millions": 2.766,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Brn_9_Y_112",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 8021,
+    "frames": 114,
+    "N_x_frames_millions": 0.914,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_HP_10_Y_102",
+    "status": "failed",
+    "lane": "evening_lane_a",
+    "N": 11404,
+    "frames": 346,
+    "N_x_frames_millions": 3.946,
+    "fit_seconds": null,
+    "reason": "cuda_out_of_memory"
+  },
+  {
+    "family_id": "tutor_LG_181_03",
+    "status": "failed",
+    "lane": "evening_lane_a",
+    "N": 12537,
+    "frames": 308,
+    "N_x_frames_millions": 3.861,
+    "fit_seconds": null,
+    "reason": "cuda_out_of_memory"
+  },
+  {
+    "family_id": "tutor_R_46",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 4383,
+    "frames": 124,
+    "N_x_frames_millions": 0.543,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Blk_16_HP",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 4447,
+    "frames": 138,
+    "N_x_frames_millions": 0.614,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Brn_17_Y_179",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 4515,
+    "frames": 165,
+    "N_x_frames_millions": 0.745,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Wh_22",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 5282,
+    "frames": 107,
+    "N_x_frames_millions": 0.565,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_DG_35_Y_116",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 5430,
+    "frames": 208,
+    "N_x_frames_millions": 1.129,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_DG_32",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 5572,
+    "frames": 176,
+    "N_x_frames_millions": 0.981,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Wh_47_Or",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 5902,
+    "frames": 112,
+    "N_x_frames_millions": 0.661,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Gry_35_HP",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 7263,
+    "frames": 141,
+    "N_x_frames_millions": 1.024,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_R_17_Y_130",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 7285,
+    "frames": 194,
+    "N_x_frames_millions": 1.413,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Wh_33_R",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 9955,
+    "frames": 213,
+    "N_x_frames_millions": 2.12,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Or_236_04",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 10194,
+    "frames": 179,
+    "N_x_frames_millions": 1.825,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_LP_5",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 12909,
+    "frames": 139,
+    "N_x_frames_millions": 1.794,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Aq_33_HP",
+    "status": "failed",
+    "lane": "evening_lane_a",
+    "N": 13351,
+    "frames": 239,
+    "N_x_frames_millions": 3.191,
+    "fit_seconds": null,
+    "reason": "host_ram_headroom_guard"
+  },
+  {
+    "family_id": "tutor_DG_31",
+    "status": "completed",
+    "lane": "evening_lane_a",
+    "N": 15285,
+    "frames": 114,
+    "N_x_frames_millions": 1.742,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_LG_281_03",
+    "status": "completed",
+    "lane": "evening_lane_b",
+    "N": 16216,
+    "frames": 146,
+    "N_x_frames_millions": 2.368,
+    "fit_seconds": null,
+    "reason": "completed"
+  },
+  {
+    "family_id": "tutor_Aq_12",
+    "status": "failed",
+    "lane": "evening_lane_b",
+    "N": 17874,
+    "frames": 234,
+    "N_x_frames_millions": 4.183,
+    "fit_seconds": null,
+    "reason": "cuda_out_of_memory"
+  }
+]
