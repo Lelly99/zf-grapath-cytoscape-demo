@@ -1,0 +1,5 @@
+arm,treatment,tutors_with_2plus_pairs,median_sd_bits,max_sd_bits
+original,assigned_only,9,0.20952378636277097,0.5699476016758415
+original,noise_included,9,0.22515896632177787,0.799834820132681
+pca75,assigned_only,9,0.0906645039631742,0.33913703505165177
+pca75,noise_included,9,0.10044811949873722,0.3264250192933049
