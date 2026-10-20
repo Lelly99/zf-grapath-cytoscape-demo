@@ -7,10 +7,10 @@
   const html = String.raw;
   const reviewTopics = [
     ['Stage S7 inference', 'The cross-lineage association needs a pre-stated primary analysis, multiple-comparison handling, effect-size intervals, and a relatedness-aware model before it can be presented as confirmatory.'],
-    ['Counts and cohorts', 'The raw → valid → excluded → analysed flow remains to be reconciled. Stage S7’s 23 all-analysable lineages are reported separately from the frozen 24-lineage Figure 2a cohort, whose 22 analysable members have not yet been computed.'],
-    ['Estimator and clustering checks', 'Small-sample bias has been checked with Miller–Madow and rarefaction; formal small-n bounds remain open. Hopkins has been calibrated by simulation; applying that calibration to the observed embeddings remains open.'],
+    ['Counts and cohorts', 'Per-bird flow is supplied: 406,625 source intervals, 1,793 rejected, and 404,832 retained. Stage S7’s 23 all-analysable lineages remain separate from the frozen 24-lineage Figure 2a cohort, whose 22 analysable members have not yet been computed.'],
+    ['Estimator and clustering checks', 'Small-sample bias has been assessed with Miller–Madow and rarefaction. Hopkins has been calibrated by simulation; applying that calibration to observed embeddings remains open.'],
     ['Segmentation and duration', 'Duration is the retained interval length (min/median/max seconds), given WhisperSeg segmentation. Manual quality-control documentation and a duration-normalised sensitivity analysis remain open before interpreting categories as biological syllables.'],
-    ['Balanced-imitation test', 'The balanced-imitation analogue is partially replicated. Stream B shows that a tutor can receive different entropy values under different pair partitions; this partition-instability issue is not yet modelled.'],
+    ['Balanced-imitation test', 'Partially replicated; partition instability not yet modelled.'],
     ['Tutor relationship definition', 'Tutor/pupil means the published tutor label and a catalogued mapping; exposure is not independently verified. The genetic, rearing, and exposure wording remains unresolved for some rows.']
   ];
 
@@ -124,7 +124,7 @@
     if (!section) return;
     const definitions = make('details', {
       class: 'definitions',
-      html: '<summary>Short glossary</summary><p><strong>Tutor</strong> and <strong>pupil</strong> are published-label and catalogued analysis roles; exposure is not independently verified. Compound or unresolved identifiers remain row-specific.</p><p><strong>Entropy:</strong> H = −Σ pᵢ log₂pᵢ; <strong>effective categories</strong> = 2<sup>H</sup>, the number of equally likely categories with the same H (Hill number of order 1). Inline notes below each table give the denominator and noise treatment.</p><p><strong>Evenness:</strong> H / log₂(K), with K occupied categories (noise is one category when included); it is undefined when K &lt; 2. <strong>Min. cluster size/min. samples:</strong> ceil(fraction × N), with fractions 0.005, 0.01, and 0.02; a larger fraction yields a coarser partition.</p>'
+      html: '<summary>Short glossary</summary><p><strong>Entropy:</strong> H = −Σ pᵢ log₂pᵢ; <strong>effective categories</strong> = 2<sup>H</sup>, the number of equally likely categories with the same H (Hill number of order 1). Inline notes below each table give the denominator and noise treatment.</p><p><strong>Evenness:</strong> H / log₂(K), with K occupied categories (noise is one category when included); it is undefined when K &lt; 2. <strong>Min. cluster size/min. samples:</strong> ceil(fraction × N), with fractions 0.005, 0.01, and 0.02; a larger fraction yields a coarser partition.</p>'
     });
     section.insertBefore(definitions, section.querySelector('#af-details'));
   }
@@ -147,7 +147,9 @@
       if (!node || node.nodeType !== Node.TEXT_NODE) return;
       if (!taskId.test(node.nodeValue)) return;
       taskId.lastIndex = 0;
-      node.nodeValue = node.nodeValue.replace(taskId, 'recorded run identifier');
+      const original = node.nodeValue.match(taskId)?.[0];
+      node.nodeValue = node.nodeValue.replace(taskId, 'Pair task (original and PCA75 arms)');
+      if (original && node.parentElement?.matches('td')) node.parentElement.title = original;
     };
     const main = document.querySelector('main');
     const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
