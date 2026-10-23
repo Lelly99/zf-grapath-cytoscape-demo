@@ -1,0 +1,15 @@
+{
+  "entropy_bounds": true,
+  "probability_normalization": true,
+  "mean_pairwise_delta_identity": true,
+  "equal_pooling_jensen": true,
+  "count_pooling_jensen": true,
+  "jsd_bounds": true,
+  "existing_entropy_columns_preserved": true,
+  "n_duplicate_pair_rows": 0,
+  "duplicate_pair_rows": [],
+  "population_median_bits": 3.1441018698063647,
+  "tutor_median_bits": 3.1615652718493874,
+  "unique_pupil_median_bits": 3.1417911940747243,
+  "historical_reversal_definition": "separate tutor and family-mean-pupil medians; equality is at_or_above"
+}
