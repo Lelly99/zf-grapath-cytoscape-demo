@@ -1,0 +1,24 @@
+statistic,paper,reproduced,note
+birds with vocal-state counts in the workbook,228 recorded (text),208,the workbook holds 208 birds; the 160 pairs include 159 with counts (DG1 -> Aq32 has none)
+tutors / pupils / pairs analysed,68 / 160 / 160,68 / 159 / 159,
+median song diversity (bits),3.14,3.144,
+pooled diversity over all birds (bits),3.24,3.25,pooled over the 208 birds in the workbook
+upper bound log2(10) (bits),3.32,3.322,
+Fig 4d R2 high-similarity pairs,0.23,0.229,median split of similarity
+Fig 4d R2 low-similarity pairs,0.16,0.155,
+Fig 4e R2 tutor diversity vs similarity,0.08,0.077,
+Fig 4f R2 tutor diversity vs influence,0.25,0.254,
+Fig 4g R2 pupil diversity vs similarity,0.2,0.197,
+tutor songs with diversity < 3 bits,34,34,
+... of which pupil below the diagonal,5,5,
+Fig 4e mixed model t (tutor random intercept),1.9,1.9,optimiser: lbfgs
+Fig 4f mixed model t,4.8,4.68,optimiser: powell
+Fig 4g mixed model t,5.7,5.42,optimiser: lbfgs
+joint model: similarity t,5.0,4.92,optimiser: powell
+joint model: tutor diversity t,4.6,4.43,optimiser: powell
+"reversal share, definition: pupils below the population median whose tutor is above it",42% ('a large proportion'),38.3%,the paper does not give the exact definition; not reproduced under these definitions
+"reversal share, definition: tutor-pupil pairs on opposite sides of the median",42% ('a large proportion'),36.5%,the paper does not give the exact definition; not reproduced under these definitions
+"reversal share, definition: tutors on one side of their median with mean pupil on the other (Fig 4h)",42% ('a large proportion'),32.4%,the paper does not give the exact definition; not reproduced under these definitions
+Fig 4h: slope of mean pupil H on tutor H,not reported,0.364,OLS over 68 tutors
+"Fig 4h: mean change in pupil mean, below-median tutors (bits)",not reported,0.09,
+"Fig 4h: mean change in pupil mean, above-median tutors (bits)",not reported,-0.076,
