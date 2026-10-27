@@ -1,0 +1,19 @@
+{
+  "mean_endpoint_stats_match_existing_family_stats": true,
+  "normalized_entropies_within_unit_interval": true,
+  "pooled_panel_statistics_use_Ypool": true,
+  "equal_pooling_jensen_nonnegative": true,
+  "count_pooling_jensen_nonnegative": true,
+  "upstream_data_modified": false,
+  "audit_summary": {
+    "selected_records": 1055,
+    "historical_records": 797,
+    "lr200_records": 258,
+    "duplicate_category_keys": 0,
+    "invalid_cardinality_rows": 0,
+    "zero_cardinality_rows": 0,
+    "missing_bird_incidents": 0,
+    "unexpected_bird_incidents": 0,
+    "excluded_provenance_entries": 8
+  }
+}

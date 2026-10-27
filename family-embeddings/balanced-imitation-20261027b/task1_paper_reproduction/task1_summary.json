@@ -1,0 +1,11 @@
+{
+  "n_birds": 208,
+  "n_pairs": 159,
+  "n_tutors": 68,
+  "median_H": 3.1441018698063647,
+  "tutor_median_H": 3.1615652718493874,
+  "unique_pupil_median_H": 3.1417911940747243,
+  "n_duplicate_pair_rows": 0,
+  "stats_table": "reproduction_vs_paper.csv",
+  "validation": "task1_validation.json"
+}

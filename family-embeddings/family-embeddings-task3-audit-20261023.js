@@ -1,7 +1,41 @@
 /* Presentation layer for the audited Task-3 analogue export. */
 document.addEventListener('DOMContentLoaded', () => {
+  const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+  const parseCSV = (text) => {
+    const lines = text.trim().split(/\r?\n/).filter(Boolean);
+    if (!lines.length) return [];
+    const split = (line) => line.match(/("(?:[^"]|"")*"|[^,]+)/g)?.map((cell) => cell.replace(/^"|"$/g, '').replace(/""/g, '"').trim()) || [];
+    const header = split(lines[0]);
+    return lines.slice(1).map((line) => {
+      const cells = split(line);
+      const row = {};
+      header.forEach((key, i) => { row[key] = cells[i] ?? ''; });
+      return row;
+    });
+  };
+  const compactSummaryTable = async () => {
+    const url = `${newRoot}task3b_robustness/task3_vs_paper_summary_statistics.csv`;
+    try {
+      const response = await fetch(url, {cache: 'no-store'});
+      if (!response.ok) return `<p>Summary table unavailable (${response.status}). Download CSV instead.</p>`;
+      const rows = parseCSV(await response.text()).filter((row) => ['mean_individual', 'count_pooled', 'equal_pooled'].includes(row.pupil_summary));
+      const cols = [
+        ['embedding', 'Embedding'],
+        ['scale', 'Scale'],
+        ['pupil_summary', 'Pupil summary'],
+        ['n_families', 'Families'],
+        ['slope', 'Slope'],
+        ['r2', 'R²'],
+        ['d_mean', 'Mean pupil–tutor change'],
+        ['d_diff', 'Below-minus-above tutor change'],
+      ];
+      return `<div class="table-wrap" tabindex="0"><table><caption>Task-3 and paper benchmark statistics (all-available families)</caption><thead><tr>${cols.map(([, label]) => `<th scope="col">${esc(label)}</th>`).join('')}</tr></thead><tbody>${rows.map((row) => `<tr>${cols.map(([key]) => `<td>${esc(row[key])}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p><a download href="${url}">Download full benchmark CSV</a></p>`;
+    } catch (error) {
+      return `<p>Summary table unavailable (${esc(error.message)}). Download CSV instead.</p>`;
+    }
+  };
   const oldRoot = 'balanced-imitation-20261019/';
-  const newRoot = 'balanced-imitation-20261024/';
+  const newRoot = 'balanced-imitation-20261027b/';
   const section = document.querySelector('#bi-analogue');
   if (!section || section.dataset.task3Audit20261023) return;
   section.dataset.task3Audit20261023 = 'true';
@@ -32,6 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
   explanation.after(interpretation);
   const comparison = document.createElement('section');
   comparison.className = 'how-to-read';
-  comparison.innerHTML = `<h3>Matched-family embedding comparison and paper benchmark</h3><figure><img loading="lazy" width="1690" height="1300" src="${newRoot}task3b_robustness/fig_embedding_agreement_mean_and_pooled.png" alt="Four heatmaps showing matched-family Spearman agreement among PCoA, UMAP, PHATE, and t-SNE for tutor entropy and tutor-to-pupil change using mean and count-pooled pupils"><figcaption>Matched-family Spearman agreement for normalized entropy. UMAP and PHATE agree more strongly than t-SNE with the other embeddings; this is descriptive. <a download href="${newRoot}task3b_robustness/fig_embedding_agreement_mean_and_pooled.png">Download</a></figcaption></figure><figure><img loading="lazy" width="1820" height="1040" src="${newRoot}task3b_robustness/fig_task3_vs_paper_summary.png" alt="Raw and normalized family-level slopes for four Task 3 embeddings and the fixed-ten-cluster paper reference"><figcaption>Task-3 versus paper-reference slopes. The paper is a fixed-10-state benchmark, not an identical analytical pipeline. <a download href="${newRoot}task3b_robustness/fig_task3_vs_paper_summary.png">Download</a></figcaption></figure><p><a download href="${newRoot}task3b_robustness/cross_embedding_agreement_mean_and_pooled.csv">matched-family agreement table</a> · <a download href="${newRoot}task3b_robustness/task3_vs_paper_summary_statistics.csv">Task-3 and paper summary statistics</a> · <a download href="${newRoot}task3b_robustness/matched_families_comparison.csv">existing matched-family robustness table</a></p>`;
+  comparison.innerHTML = `<h3>Matched-family embedding comparison and paper benchmark</h3><p>UMAP and PHATE exhibit strong agreement in the ranks of tutor entropies and pupil–tutor changes for the matched families, while t-SNE shows weaker agreement with the other representations. The t-SNE results also originate from a distinct LR=200 sensitivity run, so these comparisons should not be interpreted as isolating the embedding algorithm as the sole cause of the difference.</p><p>All-available-family regression comparisons and matched-family regression comparisons answer slightly different questions. Comparing identical family sets reduces sample-composition differences, but does not make the embedding geometries equivalent.</p><figure><img loading="lazy" width="1820" height="560" src="${newRoot}task3b_robustness/fig_embedding_agreement_raw.png" alt="Matched-family Spearman agreement heatmaps for raw tutor entropy and tutor-to-pupil changes"><figcaption>Matched-family Spearman agreement, raw entropy scale. Shared color range is −1 to +1. <a download href="${newRoot}task3b_robustness/fig_embedding_agreement_raw.png">Download</a></figcaption></figure><figure><img loading="lazy" width="1820" height="560" src="${newRoot}task3b_robustness/fig_embedding_agreement_normalized.png" alt="Matched-family Spearman agreement heatmaps for normalized tutor entropy and tutor-to-pupil changes"><figcaption>Matched-family Spearman agreement, normalized entropy scale. Shared color range is −1 to +1. <a download href="${newRoot}task3b_robustness/fig_embedding_agreement_normalized.png">Download</a></figcaption></figure><figure><img loading="lazy" width="1820" height="1040" src="${newRoot}task3b_robustness/fig_task3_vs_paper_summary.png" alt="Raw and normalized family-level slopes for all-available Task 3 embeddings and the fixed-ten-cluster paper reference"><figcaption>All-available-family benchmark (Task-3 embeddings retain their own available families; paper remains a separate fixed-10 reference). <a download href="${newRoot}task3b_robustness/fig_task3_vs_paper_summary.png">Download</a></figcaption></figure><figure><img loading="lazy" width="1950" height="1040" src="${newRoot}task3b_robustness/fig_task3_vs_paper_matched43_summary.png" alt="Raw and normalized family-level slopes for matched 43 Task 3 families plus separate paper reference"><figcaption>Matched-43 benchmark for Task 3 embeddings; paper stays separate and unmatched. <a download href="${newRoot}task3b_robustness/fig_task3_vs_paper_matched43_summary.png">Download</a></figcaption></figure><div id="task3b-benchmark-table"><p>Loading compact benchmark table…</p></div><p><a download href="${newRoot}task3b_robustness/cross_embedding_agreement_three_pooling.csv">matched-family agreement table (mean/count/equal pooled)</a> · <a download href="${newRoot}task3b_robustness/spearman_agreement_matrices.csv">Spearman matrix values</a> · <a download href="${newRoot}task3b_robustness/task3_vs_paper_summary_statistics.csv">Task-3 and paper summary statistics</a> · <a download href="${newRoot}task3b_robustness/task3_vs_paper_matched43_summary_statistics.csv">matched-43 Task-3 summary statistics</a> · <a download href="${newRoot}task3b_robustness/matched_families_comparison.csv">existing matched-family robustness table</a></p>`;
   interpretation.after(comparison);
+  compactSummaryTable().then((html) => {
+    const mount = comparison.querySelector('#task3b-benchmark-table');
+    if (mount) mount.innerHTML = html;
+  });
 });

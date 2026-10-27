@@ -1,0 +1,296 @@
+{
+  "observed": {
+    "slope": 0.36352892432946493,
+    "r2": 0.2313012584240219,
+    "d_below": 0.08963868297215792,
+    "d_above": -0.07589869383065036,
+    "d_mean": 0.006869994570753781,
+    "d_below_c": 0.08276868840140414,
+    "d_above_c": -0.08276868840140414,
+    "d_diff": 0.16553737680280828,
+    "rev_share": 0.3235294117647059,
+    "pair_slope": 0.4099275704473674,
+    "share_up_low_c": 0.8529411764705882
+  },
+  "observed_ci_cluster_bootstrap": {
+    "slope": [
+      0.20379887987867407,
+      0.5247198179182575
+    ],
+    "r2": [
+      0.06015345944362247,
+      0.5127468867514268
+    ],
+    "d_diff": [
+      0.09095791289590918,
+      0.21625421686999874
+    ],
+    "d_below_c": [
+      0.046490428773065175,
+      0.1092297558162541
+    ],
+    "d_above_c": [
+      -0.10751250510691554,
+      -0.04399198690885133
+    ],
+    "rev_share": [
+      0.17647058823529413,
+      0.45588235294117646
+    ],
+    "pair_slope": [
+      0.20379901804413597,
+      0.5534034976431393
+    ],
+    "share_up_low_c": [
+      0.7307692307692307,
+      0.9666666666666667
+    ]
+  },
+  "leverage": {
+    "n_tutors": 68,
+    "n_pairs": 159,
+    "loo_slope_range": [
+      0.3128926685438624,
+      0.4018389366440117
+    ],
+    "loo_d_below_range": [
+      0.07859051836333451,
+      0.09819670816132504
+    ],
+    "lowest_tutor": "aq12",
+    "lowest_tutor_H": 2.584149520070742,
+    "lowest_tutor_n_pupils": 7,
+    "slope_without_lowest_tutor": 0.3128926685438624,
+    "d_below_without_lowest_tutor": 0.08643564800470707
+  },
+  "break_even": {
+    "slope": {
+      "rejected_at_tau": [
+        1,
+        3,
+        10,
+        20
+      ],
+      "largest_tau_rejected": 20
+    },
+    "r2": {
+      "rejected_at_tau": [
+        100,
+        300,
+        1000
+      ],
+      "largest_tau_rejected": 1000
+    },
+    "d_diff": {
+      "rejected_at_tau": [
+        1,
+        3,
+        10,
+        20,
+        30,
+        40,
+        50,
+        70
+      ],
+      "largest_tau_rejected": 70
+    },
+    "d_below_c": {
+      "rejected_at_tau": [
+        1,
+        3,
+        10,
+        20,
+        30,
+        40,
+        50,
+        70
+      ],
+      "largest_tau_rejected": 70
+    },
+    "d_above_c": {
+      "rejected_at_tau": [
+        1,
+        3,
+        10,
+        20,
+        30,
+        40,
+        50,
+        70
+      ],
+      "largest_tau_rejected": 70
+    },
+    "rev_share": {
+      "rejected_at_tau": [],
+      "largest_tau_rejected": null
+    },
+    "pair_slope": {
+      "rejected_at_tau": [
+        1,
+        3,
+        10,
+        20
+      ],
+      "largest_tau_rejected": 20
+    },
+    "share_up_low_c": {
+      "rejected_at_tau": [
+        1,
+        3,
+        10,
+        300,
+        1000
+      ],
+      "largest_tau_rejected": 1000
+    }
+  },
+  "pull_w_consistent_with_data": {
+    "1": {
+      "slope": [
+        0.2,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "3": {
+      "slope": [
+        0.2,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "10": {
+      "slope": [
+        0.15,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "20": {
+      "slope": [
+        0.05,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "30": {
+      "slope": [
+        0.0,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "40": {
+      "slope": [
+        0.0,
+        0.5
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "50": {
+      "slope": [
+        0.0,
+        0.4
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "70": {
+      "slope": [
+        0.0,
+        0.3
+      ],
+      "d_diff": [
+        0.05,
+        0.6
+      ],
+      "d_below_c": [
+        0.05,
+        0.6
+      ],
+      "d_above_c": [
+        0.05,
+        0.6
+      ]
+    },
+    "100": {
+      "slope": null,
+      "d_diff": [
+        0.0,
+        0.6
+      ],
+      "d_below_c": [
+        0.0,
+        0.6
+      ],
+      "d_above_c": [
+        0.0,
+        0.6
+      ]
+    },
+    "300": {
+      "slope": [
+        0.2,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    },
+    "1000": {
+      "slope": [
+        0.0,
+        0.6
+      ],
+      "d_diff": null,
+      "d_below_c": null,
+      "d_above_c": null
+    }
+  },
+  "context": {
+    "windows_per_tutor_median": 5715.0,
+    "windows_per_pupil_median": 5448.0,
+    "median_SE_of_H_bits_by_tau": {
+      "1": 0.008370531710914519,
+      "3": 0.014498186209670385,
+      "10": 0.02646994543315598,
+      "20": 0.03743415582684496,
+      "30": 0.04584729036380193,
+      "40": 0.05293989086631196,
+      "50": 0.05918859734924689,
+      "70": 0.0700328928335806,
+      "100": 0.08370531710914518,
+      "300": 0.14498186209670388,
+      "1000": 0.26469945433155984
+    },
+    "median_plugin_bias_bits_by_tau": {
+      "1": 0.0011360305727114925,
+      "3": 0.0034080917181344775,
+      "10": 0.011360305727114925,
+      "20": 0.02272061145422985,
+      "30": 0.03408091718134477,
+      "40": 0.0454412229084597,
+      "50": 0.05680152863557462,
+      "70": 0.07952214008980447,
+      "100": 0.11360305727114924,
+      "300": 0.3408091718134477,
+      "1000": 1.1360305727114923
+    }
+  },
+  "target_jsd_bits": 0.04417843796243875,
+  "tau_max_consistent_with_observed_jsd": 50.0,
+  "tau_min_by_design": 10
+}
