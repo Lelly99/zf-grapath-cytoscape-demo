@@ -2,5 +2,5 @@
   "forbidden_pattern": "/media/|/home/|zucchero|localhost|\\.local\\b",
   "hits": [],
   "passed": true,
-  "files": 67
+  "files": 76
 }
